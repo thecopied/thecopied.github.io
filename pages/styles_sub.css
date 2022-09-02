@@ -1,0 +1,87 @@
+hr {
+	color: black;
+	border-width: 2px;
+}
+footer {
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+	width: 100%;	 
+}
+h2 {
+	font-size: 250%;
+	text-align: center;
+}
+#title {
+	font-size: 170%;
+	text-align: left;
+	font-style: italic;
+	position: relative;
+	left: 10%;
+	width: 80%;
+
+}
+ul {
+	font-size: 150%;
+}
+
+#page {
+	position: relative;
+	min-height: 96vh;
+}
+#content {
+	padding-bottom: 2%;    
+}
+#side {
+	font-size: 250%;
+	text-align: left;
+	position: relative;
+	left: 20%;
+	width: 80%;
+}
+#license {
+	text-align: right;
+}
+#negative {
+	background-color: black;
+	color: white;
+}
+#list {
+	position: relative;
+	top: 30px;
+	left: 5%;
+	line-height: 4em;
+	color: black;
+	width: 95%;
+}
+#uplist {
+	position: relative;
+	top: 40px;
+	line-height: 2em;
+	left: 2%;
+	width: 98%;
+}
+#descrip {
+	position: relative;
+	left: 10%;
+	width: 60%;
+	text-align: justify;
+}
+.home {
+	color: black;
+	text-decoration: none;
+}
+.whome {
+	color: white;
+	text-decoration: none;
+}
+.gold {
+	color: goldenrod;
+}
+.paragraph {
+	left: 5%;
+	width: 80%;	
+	position: absolute;
+	text-align: justify;
+}
+
