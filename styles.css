@@ -1,0 +1,61 @@
+body {
+	background-color: black;
+	color: white;
+}
+h1 {
+	font-size: 350%;
+	text-align: center;
+}
+h2 {
+	color: white;
+	font-size: 200%;
+	text-align: center;
+}
+h3 {
+
+	font-size: 350%;
+	text-align: center;
+}
+
+a {
+	color: white;
+}
+a:visited {
+	color: sienna;
+}
+p {
+	text-align: center;
+}
+#bottom {
+	bottom: 0;
+	position: relative;
+	width: 100%;
+	text-align: right;
+	right: 5px;
+
+}
+#boxedText {
+	border: 1px solid white;
+	width: 250px;
+	border-radius: 1px;
+	padding: 1px ;
+	margin: 1px;
+	display: flex;
+	justify-content: center;	
+}
+#topline {
+	width: 60%;
+	text-align: center;
+	color: white;
+}
+#botline {
+	border-width: 2px;
+	color:  white;
+}
+#update {
+	display: flex;
+	justify-content: center;
+}
+#noline {
+	text-decoration: none;
+}
