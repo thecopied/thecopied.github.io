@@ -12,6 +12,9 @@ h2 {
 	font-size: 250%;
 	text-align: center;
 }
+ul {
+	font-size: 150%;
+}
 #title {
 	font-size: 170%;
 	text-align: left;
@@ -19,12 +22,7 @@ h2 {
 	position: relative;
 	left: 10%;
 	width: 80%;
-
 }
-ul {
-	font-size: 150%;
-}
-
 #page {
 	position: relative;
 	min-height: 96vh;
