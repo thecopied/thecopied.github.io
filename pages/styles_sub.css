@@ -82,4 +82,10 @@ ul {
 	position: absolute;
 	text-align: justify;
 }
-
+.colord {
+    color: purple;
+    text-decoration: none;
+}
+a:visited.colord {
+    color: blue;
+}
