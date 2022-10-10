@@ -46,9 +46,9 @@ ul {
 }
 #list {
 	position: relative;
-	top: 30px;
+	top: 0px;
 	left: 5%;
-	line-height: 4em;
+	line-height: 2.5em;
 	color: black;
 	width: 95%;
 }
