@@ -89,3 +89,7 @@ ul {
 a:visited.colord {
     color: blue;
 }
+.small {
+    font-size: 70%;
+    line-height: 1.5em;
+}
