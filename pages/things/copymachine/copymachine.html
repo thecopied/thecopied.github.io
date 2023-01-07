@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>copymachine</title>
+		
+		<meta charset="UTF-8">
+		<meta name="description" content="My experience">
+		<meta name="author" content="thecopied">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="../../styles_sub.css">
+		
+	<body>
+	<div id="page">
+		<div id="content">
+		<h1><a href="../../../index.html" class="home">Copy</a></h1>
+		<hr>
+		<br>
+		<h2 id="side">copymachine</h2>
+		<br>
+		<div id="list">
+			<p>A <a href="copymachine.zip">copymachine</a> is composed of three parts:</p>
+			<ul>	<li>The Code
+					<ul class="small">
+					<p></p>
+						<li>A 179B bash file "copy.sh" endlessly copies the media within the folder "copyrighted material." The script renames the media to either 0 or 1, deletes the original, and repeats the process. Every time a file is copied $150,000 is added to the tally of accrued copyright fines.</li>
+						<li>The code can be seen here:
+							<pre><code>	#!/bin/bash
+	cd copyrighted_material
+	i=0
+	while :
+	do
+		for a in *; do
+			if [ $a = 0 ]; then
+				b=1
+			else
+				b=0
+			fi
+			cp $a $b && rm $a
+		((i++))
+		done
+		echo $((150000 * $i)) 
+	done</code></pre></li>
+
+					</ul></li>
+				<li>The Media</li>
+				<ul class="small">
+				<p></p>
+				<li> Within the folder "copyrighted material" a 94kB mp4 video file named "0" depicts 20s from Frozen 2 (2019).</li></ul>
+
+				<li>The Confession</li>
+				<ul class="small">
+				<p></p>
+				<li>A text file "confession.txt" provides an account of an unknown criminal confessing to the crimes committed by their copymachine.</li></ul>
+			</ul>
+			<p>A copymachine may be downloaded as a 97.1kB zip file <a href="copymachine.zip">here</a></p>
+			
+			<p>The OS</p>
+			<img src="copyos.jpeg" alt="CopyOS" width="90%">
+			<p>A copymachine powered OFF</p>
+			<img src="copymachine0.jpg" alt="copymachine off" width="90%">
+			<p>A copymachine powered ON</p>
+			<img src="copymachine1.jpg" alt="copymachine on" width="90%">
+
+
+		</div>
+		</div>
+	<footer id="foot">
+		<h3><a class="home" href="../../../index.html">Copy</a></h3>
+
+	</footer>
+	</div>
+	</body>
+</html>
