@@ -1,0 +1,1151 @@
+/* ------ Advanced Search framework------ */ 
+
+/*LAYOUT
+---------*/
+html body .tribForm, html body #search_overlay a {
+    text-align: left;
+}
+
+:focus{
+    outline: none;
+}
+
+.adv_search {
+	background-color: #fff;
+	padding-top: 20px;
+}
+
+.adv_search h3, .adv_search h4 {
+	color: #000;
+}
+	
+.adv_search .searchmasthead {
+	width: 100%;
+	height: 32px;
+	line-height: 32px;
+}
+
+.adv_search .searchpanels {
+	clear: left;
+	float: left;
+	width: 164px;
+	margin-left: 3px;
+	margin-top: -49px;
+}
+
+div.searchpanels h3 {
+	margin:10px 0;
+}
+
+.adv_search .searchpanels .panel {
+	margin-bottom: 20px;
+}
+
+.adv_search #content {
+	width: 645px;
+	margin-left: 0;
+	clear: both;
+}
+
+.adv_search #search-results, .adv_search #search-google-ads, .adv_search #sponsored-links{
+	width: 460px;
+	float: right;
+	clear: none;
+}
+.adv_search #search-google-ads, .adv_search #sponsored-links{
+	padding:5px 0;
+	margin:0;
+}
+div.sponsored-link{
+	margin-bottom:8px;
+}
+.adv_search #search-results p.search-terms{
+	float: none;
+}
+
+.adv_search #search-results .search-terms img{
+	display: inline;
+	vertical-align: top;
+}
+	
+.adv_search .searchadrail {
+	width: 335px;
+	float: right;
+}
+
+.adv_search .searchadrail div {
+	margin: 0 auto;
+}
+
+/*temporary overwrite*/
+.adv_search #search-results ul.results-list dl {
+	width: 100%;
+}
+
+/*date menu positioning*/
+#panel_date_range_pre_div{
+	margin:0 0 0 14px;
+}
+select#date_range_predefined{
+	margin:0 0 0 14px;
+}
+* html #panel_date_range_pre_div{
+	margin:2px 0 0 30px;
+}
+* html select#date_range_predefined{
+	margin:2px 0 0 30px;
+}
+*+html #panel_date_range_pre_div{
+	margin:2px 0 0 30px;
+}
+*+html select#date_range_predefined{
+	margin:2px 0 0 30px;
+}
+input#panel_date_range_custom_from, input#panel_date_range_custom_to{
+	width:85px;
+}
+
+
+/* DEFAULT FORMS
+-----------------*/
+.tribForm a, .tribForm a:focus{
+    outline: none;
+}
+.tribForm ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.tribForm li{
+    margin-bottom: 5px;
+}
+.tribForm li.indent{
+    margin-left: 20px;
+}
+.tribForm li, .tribForm label, .tribForm input{
+    display: block;
+}
+.tribForm input{
+    font-size: 12px;
+    height: 20px;
+    text-indent: 5px;
+    vertical-align: middle;
+}
+.tribForm input[type=hidden]{
+    display: none;
+    visibility: none;
+}
+.tribForm input.prepop{
+    color: #666;
+}
+.tribForm .horiz input.adv_search_input{
+    border: none;
+    border-left: 2px solid #999;
+    border-top: 2px solid #999;
+    border-bottom: 1px solid #ddd;
+    position: absolute;
+    top: 0px;
+    right: 19px;
+    padding: 0;
+}
+.tribForm .horiz input.adv_submit,
+.horiz input.adv_submit{
+    background: transparent url(/web/20121026200606im_/http://www.wgntv.com/hive/images/adv_search/adv_search_btn.png) repeat top left;
+    height: 23px;
+    width: 21px;
+    padding: 0;
+    border: none;
+    border-top: 2px solid #999;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    text-indent: -9999px;
+    font-size: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#keyword_search_input{
+	float: right;
+	padding:	2px;
+}
+.tribForm .submit{
+    text-indent: 0;
+    width: auto;
+    margin-top: 4px;
+}
+.tribForm input.submit{
+    padding:0 0 16px 0;
+}
+.tribForm li label.inline, .tribForm li input.inline{
+    display: inline;
+    margin: 0;
+}
+.tribForm .horiz label, .tribForm .horiz input,
+.horiz label, .tribForm .horiz input{
+    display: inline;
+    margin-right: 5px;
+    vertical-align: top;
+}
+.tribform .disabled{
+    background: #ddd;
+    color: #ccc;
+}
+.tribForm .colWrap{
+    overflow: hidden;
+}
+.tribForm .colWrap ul{
+    float: left;
+}
+.tribForm .2col ul{
+    width: 50%;
+}
+.tribForm .3col ul{
+    width: 33%;
+}
+.tribForm .4col ul{
+    width: 25%;
+}
+.tribForm .5col ul{
+    width: 20%;
+}
+
+/* IE TUNING */
+* html .tribForm input{
+    text-indent: 0;
+	padding: 4px 0 0 4px;
+}
+*+html .tribForm input{
+    text-indent: 0;
+	padding: 4px 0 0 4px;
+}
+* html .tribForm input.submit{
+    text-indent: 0;
+	padding: 0;
+}
+*+html .tribForm input.submit{
+    text-indent: 0;
+	padding: 0;
+}
+
+
+/* ------BEGIN ADV Search Results------ */ 
+
+/*MASTHEAD
+-------------*/
+.adv_search .searchmasthead p {
+	display: inline;
+	float: left;
+	width: 160px;
+	text-align: right;
+}
+.adv_search .searchmasthead .searchform {
+	display: inline;
+	float: left;
+	margin-left: 175px;
+}
+.adv_search .searchmasthead .searchform .text {
+	width: 390px;
+}
+.adv_search .searchmasthead #launchModal {
+	margin-left: 20px;
+}
+
+/*PANELS
+-------------*/
+
+div.panel {
+	display:none;
+}
+
+div.panelTab {
+	background:url('/web/20121026200606im_/http://www.wgntv.com/hive/images/adv_search/panel_bg.png') no-repeat;
+	background-position:0 0;
+	width:156px;
+	height:26px;
+	padding:6px 0 0 8px;
+	cursor: pointer;
+}
+div.panelTabActive {
+	background:url('/web/20121026200606im_/http://www.wgntv.com/hive/images/adv_search/panel_bg.png') no-repeat;
+}
+div.panelTab div {
+	background:url("/web/20121026200606im_/http://www.wgntv.com/hive/images/adv_search/adv_carat_bg.png") no-repeat scroll 0 0 transparent;
+	float:left;
+	width:17px;
+	height:15px;
+	padding:0;
+	position:relative;
+	top:-2px;
+}
+div.panelTabActive div {
+	background:url(/web/20121026200606im_/http://www.wgntv.com/hive/images/adv_search/adv_carat_bg.png) no-repeat scroll 0 -15px transparent;
+	float:left;
+	width:17px;
+	height:15px;
+	padding:0;
+	position:relative;
+	top:-1px;
+}
+div.panelLabel {
+	width:40px;
+	text-align:right;
+	padding:4px 6px 0 0;
+	float:left;
+}
+div.panelInput {
+	float:left;
+}
+
+/* RELATED KEYWORDS */
+#adv_keywords_head{
+	position: relative;
+	overflow: hidden;
+	background-color: #5F9FD0;
+	width: 100%;
+	height:22px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	-moz-top-right-border-radius: 5px;
+	-moz-top-left-border-radius: 5px;
+	-webkit-top-right-border-radius: 5px;
+	-webkit-top-left-border-radius: 5px;
+	-khtml-top-right-border-radius: 5px;
+	-khtml-top-left-border-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+#adv_keywords_close{
+    display: block;
+	float: right;
+	background: transparent url(/web/20121026200606im_/http://www.wgntv.com/hive/images/adv_search/adv_search_close.png) no-repeat top left;
+	_background: transparent url(/web/20121026200606im_/http://www.wgntv.com/hive/images/adv_search/adv_search_close.gif) no-repeat top left;
+	text-indent: -9999px;
+	width: 20px;
+	height: 19px;
+	margin: 2px 5px 2px 0;
+}
+#adv_keywords_question{
+    display: block;
+	float: right;
+	background: transparent url(/web/20121026200606im_/http://www.wgntv.com/hive/images/adv_search/search_results_question_opaque.png) no-repeat top left;
+	_background: transparent url(/web/20121026200606im_/http://www.wgntv.com/hive/images/adv_search/search_results_question_opaque.gif) no-repeat top left;
+	text-indent: -9999px;
+	width: 20px;
+	height: 19px;
+	margin: 2px 5px 2px 0;
+}
+
+/* BY DATE */
+div#bydate div.calendarLinks{
+	float:right;
+	margin:6px 6px;
+}
+div#bydate{
+	margin-left:10px;
+}
+div#bydate a{
+	font-size:85%;
+	font-weight:normal;
+}
+#panel_date_range_error{
+	color:#f00;
+	font-style:italic;
+	padding:6px 0;
+	display:none;
+}
+div.calendarLinks{
+	margin-bottom:12px;
+}
+.custDateRow{
+	width:156px;
+	padding:2px 0;
+}
+
+/* BY CATEGORY */
+
+/* TOP SEARCH */
+.adv_search .topsearch {
+	margin-top: 20px;
+}
+
+.adv_search .topsearch h4 {
+	margin: 0 0 5px 2px;
+}
+
+.adv_search .topsearch ul li {
+	margin: 0 0 2px 20px;
+}
+
+.adv_search #cat_tree {
+    margin: 0 0 10px 10px;
+}
+.adv_search #cat_tree li{
+    cursor: pointer;
+    list-style: none;
+    margin: 5px 0;
+    padding-left: 14px;
+}
+.adv_search #cat_tree li span{
+    cursor: default;
+}
+.adv_search #cat_tree li.parent{
+    background: url(/web/20121026200606im_/http://www.wgntv.com/hive/images/adv_search/adv_plus.png) no-repeat left top;
+}
+.adv_search #cat_tree li.open{
+    background: url(/web/20121026200606im_/http://www.wgntv.com/hive/images/adv_search/adv_minus.png) no-repeat left top;
+}
+.adv_search #cat_tree li ul{
+    display: none;
+    margin: 0 0 5px 0;
+}
+	
+/*RESULTS
+-------------*/
+
+/* RESULTS HEADER */
+p.adv-sort{
+	margin:0 0 6px 0;
+}
+p.adv-sort select{
+	height:20px;
+}
+
+/* ARTICLES */
+div.search-terms{
+	clear:both;
+	margin:10px 0 8px 0;
+}
+ul.adv-results-list li img, div#sponsored-links div.sponsored-link img {
+	float:left;
+	margin:0 12px 6px 0;
+}
+ul.adv-results-list li div{
+	clear:none;
+	margin:0 0 12px 0;
+}
+ul.adv-results-list li div span.date{
+	font-style:normal;
+	color:#000;
+}
+ul.adv-results-list li div span.byline{
+	font-size:80%;
+	font-weight:bold;
+}
+ul.adv-results-list li div span.byline span.bylineName{
+	text-transform: uppercase;
+}
+
+/* IMAGES */
+#advSearchImages{
+	clear:none;
+	display:block;
+	float:left;
+}
+#advSearchImages ul{
+	list-style:none;
+	clear:both;
+}
+#advSearchImages ul li{
+	display:inline-block;
+	width:140px;
+	height:145px;
+	padding:5px 13px 5px 0;
+	float:left;
+}
+#advSearchImages ul li div.advImage{
+	width:140px;
+	height:105px;
+	overflow:hidden;
+	background:#eee;
+}
+
+/* VIDEOS */
+
+/* BLOGS */
+
+/* RESULTS FOOTER */
+div.advPagination {
+	text-align:center;
+	clear:both;
+	float:none;
+}
+#search-results div.advPagination ul.pagination {
+	float:none;
+}
+
+
+/*ADRAIL
+-------------*/
+.adv_search .cubead {
+	width: 300px;
+}
+
+.adv_search .googlead {
+	width: 300px;
+}
+
+/* ------END ADV Search Results------ */ 
+
+
+
+
+
+/* ------BEGIN ADV Search Widget------ */
+
+#container #hotTopic #basicsearch{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: 5px;
+    top: 1px;
+    background-image: none;
+    width: auto;
+    _width: 0;
+}
+
+#container #hotTopic #basicsearch #searchText{
+    padding: 0;
+    margin: 0;
+    color: #000;
+}
+
+#container #hotTopic #basicsearch input.adv_search_input{
+     width: 100px;   
+}
+#search_overlay{
+    box-shadow: 0 0 15px #666;
+    -webkit-box-shadow: 0 0 15px #666;
+    -moz-box-shadow: 0 0 15px #666;
+    display: none;
+    position: absolute;
+    width: 300px;
+    z-index: 2147483647;
+    background-color: #eee;
+    right: 0;
+}
+#search_overlay ul{
+    display: block;
+    height: 20px;
+    margin: 10px 5px 10px 0;
+    position: relative;
+}
+#adv_search ul{
+    margin: 15px 0 15px 15px;
+    display: block;
+}
+#search_overlay a{
+    margin-left: 15px;
+}
+#search_overlay input.adv_search_input{
+    width: 255px;
+}
+#adv_search_open{
+    display: block;
+    margin: 10px 0;
+}
+#adv_search{
+    box-shadow: 0 0 15px #666;
+    -webkit-box-shadow: 0 0 15px #666;
+    -moz-box-shadow: 0 0 15px #666;
+    display: none;
+    position: absolute;
+    width: 300px;
+    z-index: 2147483646;
+    background-color: #eee;
+    border: 1px solid #dfdfdf;
+}
+#adv_search .adv_search_head{
+	position: relative;
+	overflow: hidden;
+	background: #ccc;
+	width: 100%;
+}
+#adv_search h3{
+	color: #fff;
+	float: left;
+	font-size: 16px;
+	margin: 5px 0 5px 15px;
+	padding: 0;
+	padding-top: 4px;
+}
+#adv_search_close{
+    display: block;
+	float: right;
+	background: transparent url(/web/20121026200606im_/http://www.wgntv.com/hive/images/adv_search/adv_search_close.png) no-repeat top left;
+	_background: transparent url(/web/20121026200606im_/http://www.wgntv.com/hive/images/adv_search/adv_search_close.gif) no-repeat top left;
+	text-indent: -9999px;
+	width: 20px;
+	height: 19px;
+	margin: 5px 5px 5px 0;
+}
+
+#adv_search li{
+    _height: 40px;
+}
+
+#adv_search li.fixed_date{
+	margin: 20px 0 10px;
+	_height: auto;
+}
+
+#adv_search li.custom_date{
+	margin: 10px 0;
+	_height: auto;
+}
+
+#adv_search li.custom_date input{
+	width: auto;
+	display: inline;
+}
+
+#adv_search li.custom_date label{
+	margin: 0 0 5px;
+}
+
+#adv_search li.custom_date label.inline{
+	margin: 0;
+}
+
+#adv_search li.custom_date label.custom_from{
+	margin: 0 0 0 18px;
+}
+
+#adv_search .date, #bydate .date{
+    color: #000;
+    font-style: normal;
+}
+
+#adv_search .tribForm .disabled{
+    color: #ccc;
+}
+
+#adv_search input{
+    width: 265px;
+}
+
+#adv_search .submit{
+    width: auto;
+	margin:0 12px 12px 0;
+	float:right;
+}
+
+#adv_search .inline input{
+	display: inline;
+	width: auto;
+}
+
+#adv_search #date_range_custom_from, #adv_search #date_range_custom_to{
+    width: 90px;
+}
+
+#adv_search #date_range_custom_from{
+	margin-right: 5px;
+}
+
+#adv_search li.submit{
+    margin: 20px 0;
+    _height: auto;
+}
+
+#adv_search li.submit input{
+    width: auto;
+    text-indent: 0;
+}
+
+#top_date_range_pre_div{
+	clear:both;
+}
+
+#top_date_range_cust_div{
+	display:none;
+}
+
+/* ------END ADV Search Widget------ */ 
+
+
+
+
+
+
+
+/* ------BEGIN Calendar Styles------ */ 
+ 
+ /* calendar root element */
+ #calroot {
+ 	/* place on top of other elements. set a higher value if nessessary */
+ 	z-index:2147483647;
+ 	
+ 	margin-top:-1px;
+ 	width:198px;
+ 	padding:2px;
+ 	background-color:#fff;
+ 	font-size:11px;
+ 	border:1px solid #ccc;
+ 	
+ 	-moz-border-radius:5px;
+ 	-webkit-border-radius:5px;
+ 	
+ 	-moz-box-shadow: 0 0 15px #666;
+ 	-webkit-box-shadow: 0 0 15px #666;	
+ }
+ 
+ /* head. contains title, prev/next month controls and possible month/year selectors */
+ #calhead {	
+ 	padding:2px 0;
+ 	height:22px;
+ } 
+ 
+ #caltitle {
+ 	font-size:14px;
+ 	color:#0150D1;	
+ 	float:left;
+ 	text-align:center;
+ 	width:155px;
+ 	line-height:20px;
+ 	text-shadow:0 1px 0 #ddd;
+ }
+ 
+ #calnext, #calprev {
+	display:block;
+	width:20px;
+	height:16px;
+	cursor:pointer;
+}
+#calprev {
+	background:url("/web/20121026200606im_/http://www.wgntv.com/hive/images/adv_search/adv_l_r_arrows.png") no-repeat scroll 6px 0 transparent;
+	float:left;
+}
+#calnext {
+	background:url("/web/20121026200606im_/http://www.wgntv.com/hive/images/adv_search/adv_l_r_arrows.png") no-repeat scroll -12px 0 transparent;
+	float:right;
+}
+ 
+ #calprev.caldisabled, #calnext.caldisabled {
+ 	visibility:hidden;	
+ }
+ 
+ /* year/month selector */
+ #caltitle select {
+ 	font-size:10px;	
+ }
+ 
+ /* names of the days */
+ #caldays {
+ 	height:14px;
+ 	border-bottom:1px solid #ddd;
+ }
+ 
+ #caldays span {
+ 	display:block;
+ 	float:left;
+ 	width:28px;
+ 	text-align:center;
+ }
+ 
+ /* container for weeks */
+ #calweeks {
+ 	background-color:#fff;
+ 	margin-top:4px;
+ }
+ 
+ /* single week */
+ .calweek {
+ 	clear:left;
+ 	height:22px;
+ }
+ 
+ /* single day */
+ .calweek a {
+ 	display:block;
+ 	float:left;
+ 	width:27px;
+ 	height:20px;
+ 	text-decoration:none;
+ 	font-size:11px;
+ 	margin-left:1px;
+ 	text-align:center;
+ 	line-height:20px;
+ 	color:#666;
+ 	-moz-border-radius:3px;
+ 	-webkit-border-radius:3px; 		
+ } 
+ 
+ /* different states */
+ .calweek a:hover, .calfocus {
+ 	background-color:#ddd;
+ }
+ 
+ /* sunday */
+ a.calsun {
+ 	color:red;		
+ }
+ 
+ /* offmonth day */
+ a.caloff {
+ 	color:#ccc;		
+ }
+ 
+ a.caloff:hover {
+ 	background-color:rgb(245, 245, 250);
+ }
+ 
+ 
+ /* unselecteble day */
+ a.caldisabled {
+ 	background-color:#efefef !important;
+ 	color:#ccc	!important;
+ 	cursor:default;
+ }
+ 
+ /* current day */
+ #calcurrent {
+ 	background-color:#498CE2;
+ 	color:#fff;
+ }
+ 
+ /* today */
+ #caltoday {
+ 	background-color:#333;
+ 	color:#fff;
+ }
+ 
+ /* ------END Calendar Styles------ */ 
+ 
+
+ /* ------DEFAULTS FOR TABS ------ */ 
+ul.advTabs{
+	display:block;
+	height:26px;
+	padding:3px 3px 0 3px;
+	margin:2px 0;
+	background:#000;
+	clear:both;
+}
+ul.advTabs li{
+	display:inline-block;
+	float:left;
+}
+ul.advTabs li a{
+	display:block;
+	width:100px;
+	height:20px;
+	padding:6px 2px 0 2px;
+	color:#fff;
+	background:#000;
+	text-decoration:none;
+	text-align:center;
+	cursor:hand;
+}
+ul.advTabs li.advCurrTab a{
+	background:#fff;
+	color:#000;
+}
+.advSearchLink{
+	float: left;
+	line-height: 28px;
+	margin-left: 10px;
+}
+
+.adv_dropShadow{
+	-moz-box-shadow: 	0 0 15px #666666;
+	-webkit-box-shadow: 0 0 15px #666666;
+	-khtml-box-shadow: 	0 0 15px #666666;
+	box-shadow: 		0 0 15px #666666;
+}
+.adv_IEBorder{
+	border:				1px solid #666;
+}
+
+ /* ------    HELP    ------ */ 
+ 
+#adv_help{
+	position:				absolute;
+	overflow:				hidden;
+	text-align:				left;
+	-moz-top-right-border-radius: 		5px;
+	-moz-top-left-border-radius: 		5px;
+	-webkit-top-right-border-radius: 	5px;
+	-webkit-top-left-border-radius: 	5px;
+	-khtml-top-right-border-radius: 	5px;
+	-khtml-top-left-border-radius: 		5px;
+	border-top-right-radius: 			5px;
+	border-top-left-radius: 			5px;
+	z-index: 2147483647;
+}
+
+#adv_helpHeader{
+	width: 			100%;
+	height:			22px;
+	padding-top: 	3px;
+	padding-bottom: 3px;
+	color:			#FFF;
+}
+
+.adv_warningHeader{
+	background-color: #555;
+	width: 			100%;
+	height:			22px;
+	padding-top: 	3px;
+	padding-bottom: 3px;
+	color:			#FFF;
+}
+#adv_helpHeader h3,
+.adv_warningHeader h3{
+	color:								#FFF;
+	margin-left: 						10px;
+    margin-top: 						5px;
+}
+#adv_helpContent{
+	margin: 							22px;
+}
+
+#adv_helpContent h4{
+	line-height:						2em;
+}
+ 
+#adv_helpContent ul{
+	list-style:							disc outside none;
+	padding:							0 18px;
+}
+ 
+#adv_helpContent ul li{
+	list-style:							disc outside none;
+	margin-bottom:						5px;
+}
+ 
+ /* ------  END HELP  ------ */
+ 
+ 
+ /* ------ adv_related_keyword ------ */
+ #smallContainer {
+	width: 160px;
+	height: 160px;
+	border: 1px solid #aaa;
+}
+#searchpanels .loading{
+	background: url(/web/20121026200606im_/http://www.wgntv.com/hive/images/adv_search/adv_loading.gif) no-repeat 56px 56px;
+}
+#big_container_1 .loading{
+	background: url(/web/20121026200606im_/http://www.wgntv.com/hive/images/adv_search/adv_loading.gif) no-repeat 396px 314px; 
+}
+#contentTable {
+	 display : none;
+}
+#big_container_1 {
+	position : absolute;
+	width: 820px;
+	left: 50%;
+	top: 40px;
+	z-index: 2147483647;
+	margin-left: -410px;
+	/*height: 670px;*/
+	display : none;
+	background:none repeat scroll 0 0 #FFFFFF;
+	box-shadow: 0 0 15px #666;
+	-webkit-box-shadow: 0 0 15px #666;
+	-moz-box-shadow: 0 0 15px #666;
+	-moz-top-right-border-radius: 5px;
+	-moz-top-left-border-radius: 5px;
+	-webkit-top-right-border-radius: 5px;
+	-webkit-top-left-border-radius: 5px;
+	-khtml-top-right-border-radius: 5px;
+	-khtml-top-left-border-radius: 5px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}			
+#big_container_2 {
+	padding:10px;
+	width: 800px;
+	/*height: 627px;*/
+	position: relative;
+}			
+#searchBar {
+	padding-bottom:	.15em;
+}
+#searchBar .adv_submit{
+	right:		9px;
+	top:		10px;
+}
+#imgContainer {
+	 width: 800px;
+	 /*height: 570px;
+	position:absolute;
+	top: 60px;
+	left: 10px;*/
+}
+#searchBar ul.searchCrumbs {
+	list-style-type: none;
+	height: 30px;
+	width: 663px;
+	margin: auto;
+}
+#searchBar ul li{
+	float: left;
+	padding-right: 3px;
+	font-size: 13;
+	margin-bottom: 3px;
+	font-weight: bold;
+	line-height: 12px;
+	white-space:	nowrap;
+}
+
+#searchBar ul li img{ 
+	float : left;
+	margin-right: 3px;
+}
+#searchBar ul a {
+	display: inline;
+	padding-left: 10px; 
+	padding-right: 8px; 
+	text-decoration: none;
+}
+#searchCrumbs {
+}
+#spider_tooltip{
+	text-align:		left;
+	display: none;
+	position: absolute;
+	background-color: #ffa;
+	border: 1px solid #cc9;
+	padding: 3px;
+	font-size: 12px;
+	-moz-box-shadow: 2px 2px 11px #666;
+	-webkit-box-shadow: 2px 2px 11px #666;
+}
+#imgContainer image, #searchCrumbs img, #adv_keywords_close{
+	cursor:pointer;
+}
+
+#overlayMask{
+	background: #000;
+	display: none;
+	left: 0;
+	opacity: 0.6;
+	filter: alpha(opacity=60);
+	position: absolute;
+	top: 0;
+	z-index: 2147483647;
+}
+ /* ------ adv_related_keyword ------ */
+ 
+ #resultsCount{
+ 	text-align:	left; 
+ }
+ 
+ 
+#adv_oneResultModal{
+	background:			#FFF;
+	/*padding:			1em;*/
+	color:				#222;
+	/*border:				1px solid #DDD;*/
+	position:			absolute;
+	z-index:			1100;
+	text-align:			left;
+	top:				170px;
+	overflow:			hidden;
+	-moz-box-shadow: 2px 2px 11px #666;
+	-webkit-box-shadow: 2px 2px 11px #666;
+	-khtml-box-shadow: 2px 2px 11px #666;
+	box-shadow: 2px 2px 11px #666;
+}
+
+#adv_oneResultModalOverlay{
+	background:			#000;
+	position:			absolute;
+	z-index:			1000;
+	height:				100%;
+	left:				0;
+	right:				0;
+	top:				0;
+	bottom:				0;
+}
+
+.red{
+	background-color:	red;
+}
+
+
+/*
+#adv_returnToSearch{
+ 	position:	absolute;
+ 	right:		10px;
+ 	bottom:		20px;
+}
+ 
+#adv_doSearch{
+ 	padding:	.8em;
+ 	border:		2px solid #AAA;
+ 	color:		#EEE;
+ 	background-color:	#333;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+	float: left;
+}
+#adv_doSearch a{
+	color:	#FFF;
+}
+#adv_cancelSearch{
+ 	padding:	.8em;
+ 	margin:		2px;
+}
+ */
+/* hacks to override market level rules 
+div#hotTopic div#search .tribForm .horiz input#searchText {
+    border-top: 2px solid #999;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 2px solid #999;
+}
+div#hotTopic div#search .tribForm .horiz input.adv_submit {
+    border-top: 2px solid #999;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}*/
+
+/* Third party search styles */
+#container #thirdpartysearch{
+    padding: 0;
+    margin: 0;
+    right: 5px;
+    top: 0px;
+    background-image: none;
+    width: auto;
+    _width: 0;
+}
+
+#container #thirdpartysearch #searchText{
+    padding: 0;
+    margin: 0;
+    color: #000;
+}
+
+#container #thirdpartysearch input.adv_search_input{
+     width: 100px;   
+}
+
+/* New Google Ads */
+#secondary-google-ads { clear: none;float: right;width: 460px; }
+.adv_search .ads-label { color: #999999;text-transform: uppercase;font-size:10px; }
+/*
+     FILE ARCHIVED ON 20:06:06 Oct 26, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:47:57 Sep 07, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 3.185
+  exclusion.robots: 0.035
+  exclusion.robots.policy: 0.02
+  esindex: 0.014
+  cdx.remote: 117.741
+  LoadShardBlock: 269.915 (3)
+  PetaboxLoader3.datanode: 265.811 (5)
+  PetaboxLoader3.resolve: 132.066 (3)
+  load_resource: 157.406 (2)
+*/

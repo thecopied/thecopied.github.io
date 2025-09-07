@@ -1,0 +1,821 @@
+body {
+    background: url(/web/20121026200607im_/http://www.wgntv.com/images/wgntv_page_bg.jpg) no-repeat scroll center top transparent;
+}
+h1, h2, h3, h4, h5, a, h1 a, h2 a, h3 a, h4 a, h5 a {
+	color:#003344;
+}
+div.headlines a {
+	color:#003344;
+}
+
+/* Generic Module Styles */
+div.module, div.tabModuleContainer {
+    border: 1px solid #BFC7C7;
+}
+
+div.blurb {
+border:none;
+padding:5px;
+}
+
+/* Header Styles */
+div#header {
+	height:90px;
+	position:relative;
+}
+div#header.headerWithPromo {
+	height: 140px;
+}
+div#logo {
+	position: absolute;
+	bottom: 0;
+	left: 10px;
+}
+#windoid-body #header,
+#columnist-bio-body #header {
+	padding-top: 10px;
+	}
+
+/* Centered Header Styles NOTE: Baltimore moved the tempature to the right of the weatherbug icon so positioning is different*/
+div#header.centered-logo div#logo {
+	left: 320px;
+}
+div.centered-logo div.dateStamp {
+	left:160px;
+}
+
+/* Footer Styles */
+div#footer {
+	background-color:#F8F8F8;
+	color:#3A3939;
+}
+div#footer {
+	padding:0;
+}
+div#footer div#siteOverview {
+	padding:10px;
+}
+div#footer div#siteOverview ul li ul li a.mainOverviewLink,
+div#footer div#siteOverview ul li a.mainNav {
+    color: #034;
+    text-transform: capitalize;
+}
+div#footer {
+	background: transparent;
+}
+div#footer div#footertext ul.links li a{
+	color: #034;
+}
+div#footerlogo, div#footertext {
+	padding: 10px;
+}
+div#footertext {
+	width: 640px;
+	font-size: 11px;
+	font-weight:bold;
+}
+div#footerContainer {
+	background-color:#7C808B;
+}
+div#headerAdCode1.headerAdCodeNoPromo,
+#inlineHeaderAd {
+	top: 35px !important;
+	}
+
+/* Navigation Styles */
+div#classBarNav {
+	color:#046;
+	font-size:11px; 
+}
+div#classBarNav ul.classBarNavLink a {
+	background-color: #22334D;
+	color: #FFF;
+	}
+div#classBarNav ul.classBarNavMember,
+div#classBarNav ul.classBarNavMember a {
+	color: #FFF;
+	}
+#container {
+	background: #FFFFFF;
+	}
+.headerPromo#container {
+	background-position: 0 0;
+	}
+div#navigation {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+div#navigation div#layerOne {
+	display:inline-block;
+	padding-top:10px;
+	width:100%;
+}
+ul#root li a.mainNav, #breadcrumbthirdparty a{
+	color:#fff;
+	font-family:arial, helvetica, sans-serif;
+	font-size:13px;
+}
+ul#root li a.mainNav:hover,
+ul#root li.highlight a.mainNav {
+	color: #DDD;
+	overflow: hidden;
+}
+ul#root li.hideMainNav a.mainNav {
+	text-decoration: none;
+}
+ul#root li.highlight a {
+	background: transparent;
+}
+ul#root li { padding: 0px;}
+ul#root li.navLink a {
+	padding:8px 7px 12px;
+	font-weight: bold;
+}
+ul#root li a.mainNav span {
+	line-height: 5px;
+	padding-bottom:8px;
+	padding-right:7px;
+	padding-top:5px;
+}
+ul#root li.highlight a.mainNav span {
+	background: transparent url(/web/20121026200607im_/http://www.wgntv.com/images/tabs.gif) no-repeat scroll right -50px;
+	padding-left: 0;
+}
+ul#root li.highlight,
+ul#root li:hover {
+	background-image:none;
+	background-position:center top;
+	background-repeat:no-repeat;
+}
+ul.level2 {
+	background-image:url(/web/20121026200607im_/http://www.wgntv.com/images/curvedCorners.gif);
+	background-position:center bottom;
+	background-repeat:no-repeat;
+}
+ul#root li ul.level2 li:hover {
+	background: none;
+	text-decoration: underline;
+}
+ul#root li ul.level2 {
+	margin-top: -1px;
+    background-color: transparent;
+}
+ul#root li ul.level2 li.highlight a {
+    text-decoration: underline;
+}
+ul#root li.highlight ul.level2 li a,
+ul#root li ul.level2 li a {
+	color:#d3602e;
+	font-size:11px;
+	line-height: normal;
+	padding: 5px 0px 7px;
+}
+ul#root li.highlight ul.level2 li a {
+ background-image: none !important;
+}
+ul#root li ul.level2 li.ccGreen a { color: #33ff33 !important; }
+div#hotTopic {
+	color:#C05F2E;
+}
+div#hotTopic ul li a {
+	color:#034;
+	font-size: 12px;
+	text-transform:none;
+}
+div#hotTopic ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Lead Content Styles */
+#leadcontent-main, .leadMezz {
+	background: transparent;
+	border:1px solid #BFC7C7;
+	color:#034;
+}
+div#leadcontent-main div#headlineContainer div.highlight {
+    background: #DDD;
+    color: #FFF;
+}
+#leadcontent-main h1,
+#leadcontent-main h1 a {
+	font-size: 24px;
+}
+.leadcontent h2,
+.leadcontent h3,
+.leadcontent h4 {
+    font-size: 13px;
+}
+#leadcontent-main div.highlight h1 a,
+div.mainHeadline div.highlight h4 a,
+div.highlight h3.headline a,
+div.mainHeadline div.highlight h2 a {
+	color:#FFF;
+}
+#leadcontent-main h1 a,
+div.mainHeadline h4 a,
+h3.headline a,
+div.mainHeadline h2 a,
+div.leadMezz a,
+div.leadMezz h2.headline a {
+	color:#034;
+}
+#leadcontent-main p.brief {
+	color:#000;
+}
+#leadcontent-main p.brief a,
+div.mainSlideDetailsContents h3.headline a {
+	color:#034;
+}
+#leadcontent-main div.noRotate h1,
+#leadcontent-main div.noRotate h1 a,
+#leadcontent-main div.noRotate h2,
+#leadcontent-main div.noRotate h2 a,
+#headlineContainerAdjust div.first h2,
+#headlineContainerAdjust div.first h2 a {
+font-size:21px;
+margin-top:5px;
+}
+#headlineContainer div.first h2,
+#headlineContainer div.first h2 a {
+    font-size: 18px;
+}
+div.leadMezz li.mezzitem {
+border:none;
+}
+
+/* Tab Module Styles */
+div.tabModuleContainer ul.tabModule {
+	margin:5px;
+}
+ul.tabModule li{
+    color:#FFFFFF;
+    font-size:11px;
+    text-transform:uppercase;
+    padding:0 8px;
+}
+ul.tabModule li a {
+    color:#FFFFFF;
+}
+ul.tabModule li.curTab, ul.tabModule li.curTab:hover, ul.tabModule li:hover {
+	background: #DDD;
+}
+ul.tabModule li {
+	background: #777F92;
+	border: 1px solid #CCC;
+}
+div.tabModuleContainer h2.tabTitle, div.tabModuleContainer h2.tabTitle a {
+	color: #034;
+    text-transform: uppercase;
+}
+div.tabModuleContainer div.roundtop,
+div.tabModuleContainer div.roundbottom {
+    position: relative;
+    display: block;
+    height: 8px;
+}
+div.tabModuleContainer div.roundtop div.left,
+div.tabModuleContainer div.roundtop div.right,
+div.tabModuleContainer div.roundbottom div.left,
+div.tabModuleContainer div.roundbottom div.right {
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    display: inline;
+    overflow: hidden;
+}
+div.tabModuleContainer div.roundtop div.left {
+    float: left;
+    background: transparent url(/web/20121026200607im_/http://www.wgntv.com/images/rounded_tl_bg.gif) no-repeat 0 0;
+    top: -1px;
+    left: -1px;
+}
+div.tabModuleContainer div.roundtop div.right {
+    float: right;
+    background: transparent url(/web/20121026200607im_/http://www.wgntv.com/images/rounded_tr_bg.gif) no-repeat 0 0;
+    top: -1px;
+    right: -2px;
+}
+div.tabModuleContainer div.roundbottom div.left {
+    float: left;
+    background: transparent url(/web/20121026200607im_/http://www.wgntv.com/images/rounded_bl_bg.gif) no-repeat 0 0;
+    bottom: -2px;
+    left: -1px;
+}
+div.tabModuleContainer div.roundbottom div.right {
+    float: right;
+    background: transparent url(/web/20121026200607im_/http://www.wgntv.com/images/rounded_br_bg.gif) no-repeat 0 0;
+    bottom: -2px;
+    right: -2px;
+}
+
+/* Headline Module Styles */
+div.headlines h2.title a,
+div.headlines h2.headline a,
+div.headlines h3 a,
+div.headlines h4 a {
+	color:#034;
+	position: static;
+}
+div.headlines a {
+	font-size: 12px;
+}
+div.headlines h2.collectionTitle a {
+	font-size: 16px;
+}
+div.headlines h2.title a {
+	padding-left: 0;
+}
+div.headlines span.more a {
+    color: #034;
+    font-size: 11px;
+}
+div.headlines h2.title {
+	padding-left:5px;
+	padding-top:0;
+	color: #034;
+}
+div.headlines a.storySource {
+    color:#003344;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+div.headlines ul.col2 li{
+	border-bottom: 1px solid #CCCCCC;
+	line-height: 15px;
+	padding: 5px 0;
+}
+div.headlines.mainWSecondary h2.headline a{
+	font-size:16px;
+}
+h2.sectiontitle{
+	font-size:25px;
+	padding-left: 7px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	width:99%;
+}
+
+
+/* Promo Styles */
+div.featurePromo {
+	background-color:#1B2F4A;
+	color:#FFF;
+	border:1px solid #BFC7C7;
+}
+div.featurePromo div.featureHeader {
+	background: transparent url(/web/20121026200607im_/http://www.wgntv.com/images/module_sm_bg.jpg) no-repeat scroll 0 0;
+	margin: -5px -5px 0;
+	padding-top: 5px;
+}
+div.featurePromo h2.title {
+    color:#FFFFFF;
+    font-size:18px;
+	font-weight:normal;
+}
+div.featurePromo a {
+	color:#FFF;
+}
+div.featurePromo p {
+	color:#FFF;
+	font-size: 12px;
+}
+
+div.titleContainer { 
+	height:34px; 
+	background-image:url(https://web.archive.org/web/20121026200607im_/http://media.trb.com/includes/uploads/2010/09/FA96B021_header_bg.jpg); 
+	background-repeat:repeat-x; 
+	margin-top:-10px;  
+}
+
+/* Article Styles */
+div#content.article h1,
+div#content.article h2,
+div#content.article h3,
+div#content.article #gallery-subcontent div h3,
+div#content.special-package h1,
+div#content.special-package h2,
+div#content.special-package h3
+{
+	color:#046;
+}
+div#content.article h1,
+div#content.special-package h1 {
+	font-size: 24px;
+}
+div#content.article h2,
+div#content.special-package h2 {
+	font-size: 14px;
+	color: #000;
+}
+div#content.article div.story,
+div#content.special-package div#story-body {
+	background: transparent;
+	border:none;
+	margin-bottom:0px;
+}
+div#content.article #module-ratings-and-comments h2 {
+	color:#034;
+}
+span#extraPhotos, span#extraVideos, span#extraAudio, span#extraMultimedia, span#extraStories, span#extraLinks, span#extraTopics {
+	border:1px solid #034;
+}
+div.articleRelates {
+	background: none;
+	background-color: #EDEDED;
+	border: none;
+}
+
+/* Most Popular Styles */
+div.popular ul.tabModule li {
+	padding:0 5px;
+}
+
+/* Photogallery Styles */
+div#gallery-content-popup div#gallery-photos-more li {
+	background-color: #666;
+	background-image: none;
+	}
+#gallery-content-popup #gallery-photos-more li.current a {
+	background-color: #333;
+	background-image: none;
+	color: #E2E419;
+	}
+#gallery-content-popup #gallery-photos-more li a:hover {
+	background-color: #333;
+	}
+
+/* Feature Promo Styles */
+div.featurePromo div.content h4 {
+	font-size: 16px;
+}
+
+/* Taxonomy Styles */
+#rtIconBGBar, #topicGallerySummaryHead, #tgSearchForm, .tax-tab, .tabLeftBorder, .tabRightBorder, #htTopTitleBar, .ttHead td {
+	background-color:#7C808B;
+}
+
+.tax-tab {
+	border-bottom:0px none;
+	border-top:0px none;
+}
+#tax-filterContainer {
+	background:#7C808B none repeat scroll 0 0;
+}
+
+#tax-hotTopicsOutsideWide, #tax-smallHotTopicsModule, .ttTopic td, .ttHead td, #queueLoadingDiv, #tiSearchInner {
+	border-color:#7C808B;
+}
+
+/* Misc */
+div#weatherbug {
+bottom:20px;
+}
+div#weatherbug p.wu-weather {
+	bottom:0;
+	color:#FFFFFF;
+	font-size:22px;
+	font-weight:normal;
+	right:-45px;
+}
+div#topRightNarrow div.clearfix{
+	width:100%;
+}
+
+ div.weather_behavior{width:87px;}
+.narrow .radar_map{margin-right:10px;}
+.todaysForecast .temp {width:100%;}
+div.dateFormat1 div.dateTop span.year {
+	font-size:12px;
+}
+div.dateFormat1 div.dateTop span.day {
+	font-size:12px;
+}
+.dateStamp {top: 35px; margin-left: -85px; height: 20px;}
+.dateTop, .dateBottom {display: inline; padding-right: 3px;}
+
+div.dateFormat3 {
+	border:1px solid #FFFFFF;
+	margin-bottom:20px;
+	padding:5px;
+}
+div#branding.thirdParty {
+    background-color: #1B2F4A;
+}
+div#branding.thirdParty div#classified-bar{
+	background-image: none;
+}
+div.thirdPartyContent {
+	background-color: #FFFFFF;
+}
+div#toolbarthirdparty {
+	background-color: transparent;
+	padding: 5px 0px;
+}
+div#headerthirdparty {
+	background-color: transparent;
+	margin: 0px;
+	padding:5px 0;
+}
+div#breadcrumbthirdparty {
+	padding-top: 5px;
+}
+div#breadcrumbthirdparty, div#breadcrumbthirdparty a{
+	color: #fff;
+}
+#promo-rail h4, #sponsored-links h3.tabTitle, #search-results h3.tabTitle {
+	color: #02394E;
+}
+#promo-rail h4 a {
+	color: #003344;
+}
+div.dateStamp {left:650px;}
+div.dateStamp.dateFormat1 {left:605px;}
+div.popular div.tabs h3 {padding-top: 5px;}
+div.promoRSS {padding: 5px;}
+div.accordionContent {
+	color:#000;
+}
+#extraPhotos, #extraVideos, #extraAudio, #extraMultimedia, #extraStories, #extraLinks, #extraTopics {
+	background-color:#fff;
+}
+div.threeColumnSplit {
+	background-color: #FFF;
+}
+.leadin { /* Police Blotter leadin */
+	font-weight: bold;
+	}
+.clear.leadcontentExtra{ /* fix parasite lead 1453 */
+	height: 20px;
+}
+/* special styles to format twoColumnSplit for our friends at the Baltimore Sun TIR-1436 */
+table.twoColumnSplit{
+	margin-bottom: 5px;
+}
+table.twoColumnSplit td.padRight{
+	padding-right: 5px;
+}
+table.twoColumnSplit td.right{
+	padding-left: 5px;
+}
+.twoColumnSplit td.left .tdPadder{
+	background-color: #FFF;
+}
+.twoColumnSplit td.left div.module{
+	margin-bottom: 3px;
+}
+.twoColumnSplit td{
+	padding-left: 0px;
+}
+div#content.graffiti{
+	background-color: #fff;
+	border:1px solid #BFC7C7;
+	margin-bottom: 20px;
+}
+div#content.graffiti .graffitiPadder{
+margin: 5px;
+}
+.feedMashup .feedMasherSmallTitle h2.title {
+	font-size: 16px;
+}
+#gallery-slideshow .holder .gallery-slideshow-table{
+    width:550px;
+}
+/* TIR-1539 */
+.wu_marine_row{
+height:14px;
+margin-top:5px;
+}
+.wu_marine_wrapper .wu_marine_row{
+display:block;
+padding:5px 0px;
+width:45%;
+float:left;
+margin-top:0px;
+height:auto;
+}
+.wu_marine_wrapper{
+margin:0 0 10px;
+overflow:auto;
+}
+span.wu_marine_text{
+margin-right:3px;
+}
+.wu_marine_cityname {
+	font-weight: bold;
+	font-size: 14px;
+}
+div.weathersnipet{
+	overflow:auto;
+}
+/* end TIR-1539 */
+
+/* TIR-2050 */
+div.thirdPartyContent .cb_style img {
+	display: inline;
+}
+
+/* RQ-1868 */
+.column #storybody, .article #story-body-text, #story-body-parent  {
+	line-height: 1.5em;
+}
+div.photogalleryPromo2 div.miniThumb ul li.inline{
+	height:100px;  
+ }
+ 
+ /* RQ-1887 */
+ 
+#balreg {
+	width: 480px;
+}
+#balreg span {
+	float: left;
+	margin-bottom: 4px;
+}
+#field-email {
+	width: 360px;
+}
+#field-password {
+	width: 130px;
+}
+#field-confirm {
+	width: 130px;
+}
+#field-screenname {
+	width: 360px;
+}
+
+/* BAQ-165 */
+div.mostpopular h3, div.linklist ul li {
+	color: #000;
+	font-size: 18px;
+	font-weight: normal;
+	margin-bottom: 5px;
+}
+
+#promo-rail div.archiveSearch {
+	padding: 20px;
+	border: solid 1px #CCC;
+}
+div.archiveSearch h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 22px;
+	color: #000;
+}
+div.archiveSearch form#lat_archives {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 17px;
+	color: #000;
+	padding: 10px;
+}
+div.archiveSearch form#lat_archives input {
+	margin: 5px;
+}
+div.archiveSearch a {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 18px;
+	color: #000;
+}
+div.archiveSearch a #archiveArrows {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #2262cc;
+	display: inline;
+}
+div.archiveSearch a img {
+	border: none;
+	padding: 20px;
+	margin-left:27px;
+}
+
+/* BAQ-822 */
+
+div.mezzanine h2.header {
+	padding-left:0;
+}
+div.tabModuleContainer h2.tabTitle, div.tabModuleContainer h2.tabTitle a {
+	padding-left: 2px ;
+	position: relative;
+	top: 2px;
+}
+div.tabModuleContainer .tabContentContainer {
+	top:1px;
+}
+.comment-info strong {
+	color:#003344;
+}
+
+/* BAQ-589 */
+div#section.register {
+	margin:10px;
+	padding:10px;
+	width:940px;
+	background-color:#fff;
+}
+/* BAQ-809: IE6 and IE7 bouncing page fixes */
+div.rotatingHeadlinesContainer { margin:0;}
+ul.rotatingHeadlines { margin:0; overflow-y:hidden; padding:auto 0 0 0;}
+ul.rotatingHeadlines li { margin:0; padding:0;}
+ul.rotatingHeadlinesBullets li { padding:0; margin:0;}
+
+#breakingModule { overflow-y:hidden; height:38px; width:615px; overflow:hidden;}
+.breakingNewsContainer {overflow: hidden;}
+#breakingModule div.breakingNewsModuleItems {height: 40px;overflow:hidden;}
+#breakingModule div.breakingNewsModuleItems div.breakingNewsModuleHeadlines {overflow:hidden;}
+.breakingNewsModuleTimestamp ul li.active, .breakingNewsModuleBullets ul li.active {padding:0;}
+#breakingModule div.breakingNewsModuleBranding div.breakingNewsModuleBullets {margin:0;}
+div.clear {display: block !important; display: none; }
+
+#rightRailTop .blurb {padding: 0;}
+
+/* Videobeta page*/
+
+div#navigation div#search input#searchText {
+	padding-top:6px;
+}
+
+body#videofront ul#root li a.mainNav span {
+	padding-right:3px !important;
+	font-size:13px !important;
+	} 
+body#videofront ul#root li.highlight ul.level2 li a, body#videofront ul#root li ul.level2 li a{
+	font-size:11px;
+}
+body#videofront div#hotTopic ul li {
+	border-left-color:#fff;
+}
+body#videofront div#hotTopic ul li a {
+	color:#fff;
+}
+div.eventContentItem, div.venueContentItem{ 
+	border-bottom:1px solid #fff !important;
+ }
+ 
+div.for5 div.curvedContent {
+    margin-left: 5px;
+}
+
+.todaysForecast .conditional { margin-right: 0; }
+
+.headlines div.curvedContent h2.title {
+  padding-top: 10px !important;
+}
+
+/* carnival */
+body div#container div.register{padding:0;margin:0;}
+body#carnival{color:black;margin:0;text-align:center;background:none;background-color:#1B2F4A}
+#carnival_logo{background:url(/web/20121026200607im_/http://www.wgntv.com/images/logo.png) repeat scroll 0 0 transparent;height:90px;margin:10px 55px 0;width:410px;}
+#providerChoiceIntro h1{margin:0;padding:0;}
+#carnival h2{font-size:18px;}
+.signon-content .required_label span,.signon-frame .required_label span{color:red;}
+.signon-frame input.error{border:1px solid red;}
+.signon-frame span.signon-error{color:red;}
+.signon-frame h2{font-size:18px;}
+#carnival #content{width:660px;border:1px solid #000;overflow:hidden;background-color:#fff}
+#carnival #content #providerChoiceIntro,#carnival #content #providerChoice{margin:0 10px;}
+#carnival #content .additionalOptions{margin:10px 10px;}
+/* end carnival */
+
+div#zc-wrapper { float: none }
+div#zc-wrapper-inner { margin: 0 auto 4em }
+div.zapWrap div#headerAdCode1 { padding-right: 0; }
+
+/* START SHOPPING WIDGET CSS */
+div.chiShopHeds.headlines {  background-color: #ffffff;border: 1px solid #ccc; padding: 0;  } 
+div.chiShopHeds div.sectionlink-head p { color: #663366; font-family: 'Letter Gothic','Lucida Console','Andale Mono',monospace;font-size: 14px; line-height: 17px; margin: 10px 0 2px; font-weight: normal; }
+div.chiShopHedsNew div.headlineItem h2.headline, div.chiShopHedsNew div.headlineItem h3.headline, div.chiShopHedsNew div.headlineItem h4.headline  { margin-left: 0px; } 
+div.chiShopHeds {padding: 5px 10px; margin-bottom: 5px; }  
+div.chiShopHeds headlineItem  { display: block; float: left; width: 95px; font-size: 10px; line-height: 11px; color: #000; margin: 0; text-align: center; font-size: 10px; text-align: center; }
+div.chiShopHeds div.headlineItem h2.headline a, div.chiShopHeds div.headlineItem h3.headline a, div.chiShopHeds div.headlineItem h4.headline a { font-size: 10px; line-height: 11px; text-transform: uppercase; text-align: center; } 
+div.chiShopHeds div.headlineItem h2.headline, div.chiShopHeds div.headlineItem h3.headline, div.chiShopHeds div.headlineItem h4.headline  { margin-right: 0px; }
+div.chiShopHeds div.headlineItem { padding-left: 0px; }
+div.chiShopHeds .update-source { display: none; }
+div.chiShopHeds table.headlineTable {  margin-top: -3px; text-align: center; width: 313px;}
+div.chiShopHeds table.headlineTable td { margin: 0px; padding: 0px;}
+div.chiShopHeds table.headlineTable td.firstCol { padding-left: 6px; width: 91px; }
+div.chiShopHeds table.headlineTable td.secondCol { padding-left: 4px; padding-right: 4px; width: 91px; }
+div.chiShopHeds table.headlineTable td.lastCol { padding-right: 0px; width: 91px; }
+div.chiShopHeds div.sectionlink-head a { font-family: Georgia,times New Roman,serif;  }
+div.chiShopHeds .sectionlink-head { margin: 0; text-align: center; float: none; }
+div.chiShopHeds div.titleContainer { background-image: none !important; height: 125px; }
+div.chiShopHeds img.titleLogo { margin-left: -10px; }
+/* END SHOPPING WIDGET CSS */
+/*
+     FILE ARCHIVED ON 20:06:07 Oct 26, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:47:54 Sep 07, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.535
+  exclusion.robots: 0.024
+  exclusion.robots.policy: 0.015
+  esindex: 0.013
+  cdx.remote: 24.841
+  LoadShardBlock: 314.704 (3)
+  PetaboxLoader3.datanode: 218.575 (5)
+  PetaboxLoader3.resolve: 318.739 (3)
+  load_resource: 255.409 (2)
+*/

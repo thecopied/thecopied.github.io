@@ -1,0 +1,657 @@
+#tugsRating {
+	height:30px; /*48px;*/
+	padding-bottom: 5px;
+	display: table;
+}
+#galleryRating {
+	padding-bottom:10px;
+}
+#tugsRating .rating {
+	display:block;
+	float:left;
+	height:16px;
+	width:80px;
+}
+#galleryRating #rating_2 {
+	display:block;
+	float:right;
+	height:16px;
+	font-size:11px;
+}
+#tugsRating .rating img, #galleryRating #rating_2 img {
+	float:left;
+	height:16px;
+	width:16px;
+}
+#starRatingFeedback_2 {
+	clear:both;
+}
+.story #tugsRating {
+	float:none;
+	_width:250px;
+	*width:250px;
+	padding:0;
+	text-align:left;
+}
+#ugcGallery #tugsRating {
+	height:auto;
+	/*padding:0;*/
+	float:right;
+	text-align:right;
+	*padding-bottom:0;
+	_padding-bottom:0;
+	*margin:0;
+	_margin:0;
+}	
+#galleryRating {
+	float:right;
+	text-align:right;
+	width:120px;
+}
+#tugsRating #rating_1, #tugsRating #starRatingFeedback_1, #rating_1 {
+	float:right;
+}
+.story #tugsRating #rating_1, .story #tugsRating #starRatingFeedback_1, .story #rating_1 {
+	float:left;
+}
+#starRatingFeedback_2 {
+	font-size:11px;
+	float:right;
+	_float:none;
+	*float:none;
+}
+#tugsRating #rating_1 img, #tugsRating #rating_2 img {
+	padding-bottom:0px;
+}
+#rateMarket {
+	display:none;
+}
+div#content.article span.toolSet {
+	margin-bottom:5px;
+}
+#starRatingFeedback_1 {
+	float:left;
+	padding-left:6px;
+	padding-top:1px;
+}
+#ugcGallery #starRatingFeedback_1 {
+	float:right;
+	clear:right;
+	_width:110px;
+	*width:110px;
+	padding-left:0;
+}
+#discussion #comment-list {
+	margin-top:20px;
+	width:608px;
+}
+
+#comment-list .comment-display {
+	background:transparent url(/web/20121026200606im_/http://www.wgntv.com/hive/images/commentRightBG.png) repeat-y scroll right center;
+	border-bottom:1px solid #CCCCCC;
+	padding:15px 0 10px;
+	position:relative;
+}
+
+.comment-display .comment-attributes {
+	float:left;
+	padding-right:7px;
+	width:75px;
+}
+
+.comment-display .comment {
+	float:left;
+	padding-right:15px;
+	width:393px;
+}
+.comment-info {
+	color:#666666;
+	display:block;
+	padding-bottom:2px;
+}
+#hudMask {
+    position:absolute;
+    display:none;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:2147483601;
+    background-color:#000;
+	opacity:0.6;
+    filter: alpha(opacity=60);
+}
+#hudMask[id] {
+    position:fixed;
+}
+#popUpContent {
+	display:none;
+	position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 580px;
+	_width:520px;
+    height: 400px;
+	_height:350px;
+    margin: auto;
+	z-index:2147483602;
+	padding:35px 30px 30px 30px;
+	_padding:15px;
+	margin-left:-300px;
+	background-image: url('/web/20121026200606im_/http://www.wgntv.com/hive/images/ugc/iframe_bg.png');
+	background-repeat: no-repeat;
+	background-position: top left;
+	_background-color:#f5f5f5;
+	_background-image:none;
+}
+#ugsCancelBttn, #ugsCancelBtn {
+	cursor:pointer;
+	_cursor:hand;
+}
+.comment-display .comment-triggers {
+	float:right;
+	width:110px;
+}
+
+div#discussion ul li {
+	list-style-type:none;
+	padding-bottom:6px;
+}
+
+.comment-triggers ul li.reply {
+	background:transparent url(/web/20121026200606im_/http://www.wgntv.com/hive/images/bomb.png) no-repeat scroll left top;
+	padding-left:20px;
+}
+
+.comment-triggers ul li.abuse {
+	background:transparent url(/web/20121026200606im_/http://www.wgntv.com/hive/images/flag_red.png) no-repeat scroll left top;
+	padding-left:20px;
+}
+
+.comment-triggers ul li.vote .vote-up {
+	float:left;
+	width:55px;
+}
+
+.comment-triggers ul li.vote .vote-up img {
+	padding-right:4px;
+	position:relative;
+	top:3px;
+}
+
+.vote-up .vote-up-count, .vote-down .vote-down-count {
+	color:#333333;
+	position:relative;
+	top:4px;
+}
+
+.vote-up a, .vote-up .vote-up-count, .vote-down a, .vote-down .vote-down-count {
+	float:left;
+}
+
+.commentLine {
+	border-bottom: 1px solid #ccc; display: block; margin-bottom: 10px; padding-bottom: 10px; margin-top:10px
+}
+#tugs_story_display {
+	width:100%;
+	margin:0 auto; 
+	display:inline-block;
+}
+#ugcGuidelines {
+	padding-top:25px;
+}
+#ugcComments {
+	text-align: center;
+	/*font-size:11px;*/
+}
+#tugs_story_display h3 {
+	font-size:18px !important;
+	float:left;
+	font-weight:normal !important;
+	/* color:#37689A !important; */
+	padding:6px 0 0 10px;
+}
+#tugs_story_display #tugs_head span {
+	float:right;
+	padding-top:10px;
+	padding-right:10px;
+}
+#tugs_story_display #tugs_comment_list {
+	padding:10px 15px 0px 15px;
+	text-align:left;	
+	position:relative;
+}
+#tugs_story_display #tugs_bottom {
+	padding:5px 8px 0 0;
+	text-align:right;
+	position:relative;
+}
+#tugs_story_display #tugs_footer {
+	width:587px;
+	height:10px;
+	position:relative;
+}
+#tugs_story_display #tugs_comment_list .comment {
+	padding: 15px;
+	border-bottom:1px solid #cbcbcb;
+	word-wrap:break-word;
+	width: 100%;
+}
+#tugs_story_display #tugs_comment_list .comment.last {
+	border-bottom:none;
+	padding-bottom:0;
+	margin-bottom:0;
+}
+#tugs_story_display #tugs_comment_list ul, #tugs_story_display #tugs_comment_list ol {
+	margin-left:20px;
+	
+}
+.multimedia #gallery-subcontent {
+	width: 60%;
+	margin: 5px;
+	border: none;
+}
+.ugcPhotoGallery div#content.article #gallery-subcontent, div#content.article #gallery-subcontent  {
+	border:none;
+}
+.ugcPhotoGallery #uploadFormLink {
+	background:transparent url(/web/20121026200606im_/http://www.wgntv.com/hive/images/ugc/photo_add_25w.png) no-repeat scroll 0 3px;
+	/*height:31px;*/
+	padding:5px 5px 5px 30px;
+	margin-top:3px;
+	
+}
+.ugcPhotoGallery .popup-gal {
+	padding-bottom:10px;
+	padding-right:0px;
+	_width:125px;
+	*width:125px;
+	padding-top:15px;
+	float:right;
+	clear:right;
+	_padding-right:0;
+	*padding-right:0;
+	
+}
+#gallery-content-popup A.referrer:link 
+_padding-top:0;
+*padding-top:0;
+_width:160px;
+*width:160px;
+}
+.ugcPhotoGallery #gallery-photo-header {
+
+}
+.ugcPhotoGallery #ugcGalleryHeading {
+	padding-bottom:10px;
+	width:100%;
+}
+#tugsTip {
+	padding:6px;
+	border:1px solid #999;
+	font-family:helvetica;
+	font-size:12px;
+	margin-top:35px;
+	background-color:#F8F2CF;
+	border:1px solid #B0A777;
+	color:#333;
+}
+#tugsTip .tipTitle {
+	background:transparent url('/web/20121026200606im_/http://www.wgntv.com/hive/images/ugc/lightbulb_48.png') no-repeat scroll left top;
+	border-bottom:1px solid #B0A777;
+	display:block;
+	font-size:14px;
+	height:24px;
+	padding-bottom:0px;
+	padding-left:28px;
+	padding-top:5px;
+}
+#tugsTip p {
+	line-height:18px;
+	margin:5px 0 0 0;
+	padding:0 5px;
+}
+#referrerLink {
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid #ccc; 
+	padding: 4px; 
+	display: inline-block; 
+	float: right; 
+	background-color: #f5f5f5;
+}
+div.editorPick {
+	float: right;
+	*margin-top:-15px;
+}
+div.editorPick img {
+	float:left;
+}
+div.editorPick span {
+	padding: 2px 0pt 0pt 5px; 
+	display: block; 
+	float: left; 
+	width: 68px;
+}
+/*#ugcGalleryNavigation {
+	width:100%;  
+	text-align:center;
+}
+#ugcGalleryNavigation ul {
+	text-align:center;
+	list-style-type:none;
+	height:30px;
+}
+#ugcGallery ul li {
+	display:none;
+	
+}
+#ugcGallery ul li.selected {
+	display:block;
+}
+#ugcGalleryNavigation ul li:hover {	
+	border:1px solid #333;
+	cursor:pointer;
+	_cursor:hand;
+}
+#ugcGalleryNavigation ul li span {
+	padding:4px 5px 4px 5px;
+}
+#ugcGalleryNavigation ul li img {
+	display:inline;
+}
+.ugcPhotoGallery #uploadFormLink {
+	float:right;
+	/*margin-top:10px;
+	*width:125px;
+	_width:125px;
+}
+.ugcPhotoGallery #ugcGallery {
+	width:100%;
+	text-align:center;
+}
+.ugcPhotoGallery #ugcGallery ul {
+	display:inline-block;
+}
+#ugcGallery ul li { 
+	text-align:center;
+}
+#ugcGallery ul li img {
+	margin:0 auto;
+	padding-bottom:10px;
+}
+#ugcGallery ul li div.photoData {
+	width:100%;
+	padding:15px; text-align: left; font-size: 11px; background-color:#f5f5f5;
+}
+#ugcGallery ul li div.photoData span {
+}
+#ugcGallery ul li div.photoData .ugsItemName {
+	font-size:12px;
+	font-weight:bold;
+}
+#ugcGallery ul li div.photoData .ugsItemDescription {
+	clear:both;
+	display:block;
+	padding: 5px 0;
+}
+#ugcGallery ul li div.photoData .ugsPhotoDate {
+	color:#D55317;
+}
+div#moduleArticleToolsContainer {
+	width:100%;
+}
+#photoIndexCount {
+	text-align:center;
+	padding-bottom:10px;
+}
+#ugcComments {
+	text-align:center;
+}
+#ugcComments #tugs_story_display {
+	display:inline-block;
+	/* take all lines out of tugs.css on hive line 143 
+}
+#photo-next-left, #photo-next-right {
+	border:none !important;
+}
+#tugsRating { 
+	float:right;
+	width:110px;
+}
+#tugsRating #rating_1, #tugsRating #starRatingFeedback_1 {
+	float:right;
+}
+#tugsRating #rating_1 img {
+	padding-bottom:0px;
+}*/
+#tugs_story_display #tugs_head {
+	background:transparent url(/web/20121026200606im_/http://www.wgntv.com/hive/images/ugc/gallery_link_bar_bg.jpg) repeat-x scroll center top;
+	height:33px;
+	position:relative;
+	width:100%;
+}
+/* UGC GALLERY STYLES */
+#ugcGalleryNavigation {
+	width:100%;  
+	height:30px;
+	position:relative;
+	padding-bottom:10px;
+}
+#ugcGalleryNavigation ul {
+	background-color:#F5F5F5;
+	display:inline-block;
+	height:30px;
+	list-style-type:none;
+	margin:0 auto;
+	text-align:center;
+	width:100%;
+}
+#ugcGallery ul li {
+	display:none;
+	
+}
+#ugcGallery ul li.selected {
+	display:block;
+}
+#ugcGalleryNavigation ul li {
+	display:inline-block;
+	height:22px;
+	padding:8px 13px 0;
+	position:relative;
+}
+#ugcGalleryNavigation ul li {
+	display:inline-block;
+	_display:inline;
+	*display:inline;
+	height:30px;
+	line-height:30px;
+	padding:0 10px;
+	margin:0;
+	position:relative;
+	text-align:center;
+	list-style-type:none;
+}
+#ugcGalleryNavigation ul li:hover {	
+	background:#333;
+	color:#FFF;
+	cursor:pointer;
+	_cursor:hand;
+}
+#ugcGalleryNavigation ul li.selected {
+	background-color:#777;
+	color:#FFF;
+}
+#ugcGalleryNavigation ul li span {
+	/*padding:4px 5px 4px 5px;*/
+	cursor:pointer;
+	_cursor:hand;
+}
+#ugcGalleryNavigation ul li img {
+	display:inline;
+}
+.ugcPhotoGallery #uploadFormLink {
+	float:right;
+}
+.ugcPhotoGallery #ugcGallery {
+	width:100%;
+	text-align:center;
+}
+.ugcPhotoGallery #ugcGallery ul {
+	width:100%;
+	/*_width:630px;
+	*width:630px;*/
+}
+#ugcGallery ul li { 
+	text-align:center;
+}
+#ugcGallery ul li img {
+	margin:0 auto;
+	padding-bottom:10px;
+}
+#ugcGallery ul li div.photoData {
+	width:100%;
+	text-align: left; font-size: 11px; background-color:#fcfcfc;
+	padding-bottom:30px;
+	/*
+	padding-left:10px;
+	padding-right:10px;
+	*/
+}
+#ugcGallery ul li div.photoData span {
+	padding-left:10px;
+}
+#ugcGallery ul li div.photoData .ugsItemName {
+	padding-left:10px;
+	padding-top:10px;
+	display:inline-block;
+	font-size:16px;
+	
+}
+#ugcGallery ul li div.photoData .ugsItemUser {
+	padding-left:10px;
+}
+#ugcGallery ul li div.photoData .ugsItemDescription {
+	clear:left;
+	display:block;
+	line-height:16px;
+	padding-left:10px;
+}
+#ugcGallery ul li div.photoData .ugsPhotoDate {
+	color:#D55317;
+	padding-left:10px;
+}
+div#moduleArticleToolsContainer {
+	width:100%;
+}
+div#moduleArticleTools ul li{
+	float:none;
+}
+#photoIndexCount {
+	text-align:center;
+	padding-bottom:10px;
+	display:none;
+}
+#ugcComments {
+	text-align:center;
+	padding-bottom:40px;
+}
+#ugcComments #tugs_story_display {
+	display:inline-block;
+	/* take all lines out of tugs.css on hive line 143 */
+}
+#photo-next-left, #photo-next-right {
+	border:none !important;
+}
+#ugcGalleryNavigation ul li#photo-next-left {
+	float:left;
+	height:30px;
+	padding:0;
+	width:35px;
+	background-image:url('/web/20121026200606im_/http://www.wgntv.com/hive/images/ugc/bal_ugc_gall_arrow_left.gif');
+	margin:0;
+}
+#ugcGalleryNavigation ul li#photo-next-right {
+	float:right;
+	width:35px;
+	height:30px;
+	padding:0;
+	background-image:url('/web/20121026200606im_/http://www.wgntv.com/hive/images/ugc/bal_ugc_gall_arrow_right.gif');
+	margin:0;
+	_margin-top:-30px;
+	*margin-top:-30px;
+}
+#tugs_story_display #tugs_head {
+	background:transparent url(/web/20121026200606im_/http://www.wgntv.com/hive/images/ugc/gallery_link_bar_bg.jpg) repeat-x center top;
+	width:100%;
+	height:33px;
+	position:relative;
+}
+#tugs_story_display .comment-avatar{
+  float:left;
+  padding-right:10px;
+  text-align:center;
+}
+#tugs_story_display .comment-block{
+  float:left;
+}
+#ugcGallery ul li {
+	width:100%;
+}
+#ugcGallery ul li img {
+	margin:0 auto;
+}
+#gallery-photo-header-title {
+	margin-top:0;
+	padding:10px 10px 0;
+}
+#ugcGallery #actionItems {
+	width: 120px; 
+	float: right; 
+	padding: 10px 10px 10px 0;
+	border-left:1px solid #f5f5f5;
+	margin-left:10px;
+}
+#ugcGallery #actionItems #reportAbuse {
+	padding: 0 0 10px 0; 
+	clear: both; 
+	text-align: right;
+	*margin-top:-7px;
+	_margin-top:-7px;
+}
+.share_this{
+	text-align: right;
+}
+#ugcGallery .share_this .stbuttontext{
+	padding: 0;
+}
+#newStars {
+	padding:0;
+	*width:115px;
+	_width:115px;
+}
+#ugcGallery ul li div.photoData #rating_1 img {
+	float:left;
+	width:16px;
+	height:16px;
+}
+/* END UGC GALLERY STYLES */
+/*
+     FILE ARCHIVED ON 20:06:06 Oct 26, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:47:53 Sep 07, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.779
+  exclusion.robots: 0.04
+  exclusion.robots.policy: 0.024
+  esindex: 0.013
+  cdx.remote: 22.512
+  LoadShardBlock: 181.676 (3)
+  PetaboxLoader3.datanode: 229.473 (5)
+  PetaboxLoader3.resolve: 244.571 (3)
+  load_resource: 334.305 (2)
+*/

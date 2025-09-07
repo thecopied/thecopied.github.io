@@ -1,0 +1,1501 @@
+/* global */
+.carnival-font{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:12px;}
+.bold{font-weight: bold;}
+.full{width:100%;}
+.float{float:left;}
+.block{display:block;}
+.white {color: #111;border: solid 1px #b7b7b7;background: #fff;background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ededed));background: -moz-linear-gradient(top,  #fff,  #ededed);filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed');}
+.white:hover {background: #ededed;background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcdcdc));background: -moz-linear-gradient(top,  #fff,  #dcdcdc);filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dcdcdc');}
+.white:active {color: #000;background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#fff));background: -moz-linear-gradient(top,  #ededed,  #fff);filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#ffffff');}
+.button {display: inline-block;zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */*display: inline;vertical-align: baseline;margin: 10px 2px;outline: none;cursor: pointer;text-align: center;text-decoration: none;line-height:25px;padding:0 10px;text-shadow: 0 1px 1px rgba(0,0,0,.3);-webkit-border-radius: .5em; -moz-border-radius: .5em;border-radius: .5em;-webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);-moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);}
+.button:hover {text-decoration: none;}
+.button:active {position: relative;top: 1px;}
+.centered{margin:20px auto;width:800px;}
+.rounded{border:1px solid;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;}
+.shadow{-moz-box-shadow:2px 2px 5px #111;-webkit-box-shadow:2px 2px 5px #111;box-shadow:2px 2px 5px #111;}
+.yellow{background-color:#fffdbf;}
+.disc-bullets{list-style-position:inside;list-style-type:disc;}
+.shiftLeft{margin:10px 0 10px 20px;}
+.input-short{width:150px;}
+#carnivalModal .required_label span.grey-text, .grey-text{color:#AAA;}
+.column-right{float:left;padding:25px 25px 25px 0;width: 43%;}
+.column-left{float:left;padding:25px;width:43%;}
+.top-bottom-padding{padding:10px 0;}
+.form_radio{margin-right:5px;}
+.padding20{padding:20px;}
+/* end global */
+
+#recaptcha_response_field,
+#recaptcha_instructions_image{
+	z-index:2147455555;
+}
+
+#signon-faq{padding:10px;}
+#signon-faq dd{padding:3px 0 10px;}
+#signon-faq dt{font-weight:700;padding:10px 0 0;}
+#signon-faq dd ol,#signon-faq dd ol li{list-style-type:decimal;margin-left:20px;padding:5px 100px 5px 5px;}
+
+/* reg form */
+#userNameUnavailable,#userNameAvailable{
+	width:350px;
+	font-size:12px;
+	margin-bottom:5px;
+}
+/* end reg form */
+
+/* linked accounts */
+#signon-linked-accounts div.providerOption div.signon-logo{cursor:default;}
+#signon-linked-accounts div.unlinkLink {background: url(/web/20121026200607im_/http://www.wgntv.com/hive/images/signon/link_break.png) no-repeat left ;float:right;margin:5px;padding-left:20px; 10px;line-height:60px;clear:right;vertical-align:middle;}
+div.providerOption {float:left;width:150px; margin:5px;clear:left}
+div.providerOption div.signon-logo, div.providerOption a.providerlink{background: url(https://web.archive.org/web/20121026200607im_/https://www.signon.trb.com/registration/images/login_logos.png) no-repeat 0px -400px;height:50px;margin:5px 0;padding:0;width:150px;border:0;cursor:pointer;display:block;text-decoration:none;}
+div.providerOption a.providerlink{float:none;cursor:pointer;}
+div.providerOption a.providerlink span{visibility:hidden;}
+div.providerOption div.signon-logo span, .hide{display:none;}
+div.providerOption #verisign {background-position:0px -500px;}
+div.providerOption #yahoo {background-position: 0px -550px;}
+div.providerOption #live_id {background-position:0px -250px;}
+div.providerOption #google {background-position:0px -150px;}
+div.providerOption #myspace {background-position:0px -350px;}
+div.providerOption #myspace:hover {background-position:-150px -350px;}
+div.providerOption #myspace:active {background-position:-300px -350px;}
+div.providerOption #myopenid {background-position:0px -300px;}
+div.providerOption #linkedin {background-position:0px -200px;}
+div.providerOption #facebook {background-position:0px -100px;}
+div.providerOption #aol {background-position:0px 0px;}
+div.providerOption #openid {background-position:0px -400px;}
+div.providerOption #blogger {background-position:0px -50px;}
+div.providerOption #twitter {background-position:0px -450px;}
+div.providerOption #flickr {background-position:0px -600px;}
+div.providerOption #wordpress {background-position:0px -650px;}
+/* end linked accounts */
+
+/* newsletter */
+form.modal-nl-form div ul li.nl-item { padding:10px; }
+.modal-nl-form{border:1px solid #000;-moz-border-radius:10px;-webkit-border-radius:10px;background-color:#FFF;margin:20px;}
+.nl-item{float:left;padding:5px;width:320px; *width:308px;}
+.form-list-title{font-size:14px;font-style:italic; padding:5px; padding-top:20px;}
+.form-list-title p.nl-click-text { font-size:12px; font-weight:normal; }
+.form-buttons{clear:both;background-color:#e6e6e6;-moz-border-radius-bottomleft:10px;-moz-border-radius-bottomright:10px;-webkit-border-bottom-left-radius:10px;-webkit-border-bottom-right-radius:10px;border-bottom-left-radius:10px;border-bottom-right-radius:10px;width:100%;border-top:1px solid #000;}
+	/* targeting the signon frame specifically in the modal so we can use the same markup */
+	#carnivalModalWrapper .signon-frame{border:0;margin:0;}
+	/* targeting list item to overwrite bad code from market.css*/
+	#subscription-form #subscription-form-field ul li{height:auto;}
+/* end newsletter */
+
+/* tooltip */
+.ssor-help{background:url(/web/20121026200607im_/http://www.wgntv.com/hive/images/signon/help.png) no-repeat;height:25px;width:25px;margin-left:10px;padding:5px 15px;cursor:pointer;zoom:1;_padding-bottom:0;*padding-bottom:0;}
+.ssor-toolTip{position:absolute;width:300px;text-align:left;background:#fff;border:2px solid #506faa;font-size:.75em;padding:10px;-moz-border-radius:10px;-webkit-border-radius:10px;-o-border-radius:10px;}
+/* end tooltip */
+
+/* thank you page 
+#ssor-thanks .form-list{padding:5px 0 20px 0;}
+ end thank you page */
+
+/* accordion */
+.accordion_container{border:1px solid;}
+.accordion_heading{background-color:#e6e6e6;border-bottom:1px solid;font-size:1.5em;padding:10px;}
+/* end accordion */
+
+/* end reset password form */
+
+/* profile styles */
+/* div.nl-dd { width:13px; height:12px; text-align:center; vertical-align:middle; }
+   *div.nl-dd { display:inline; } */
+/* profile pages */
+span.nl-dd-img { width:13px; height:12px; border:0; margin:0; cursor:pointer; display:inline-block; vertical-align:middle; }
+span.nl-dd-img { *display:inline-block; }
+span.plus { background:url("/web/20121026200607im_/http://www.wgntv.com/hive/images/signon/subscriptions/plus_black.png"); }
+span.minus { background:url("/web/20121026200607im_/http://www.wgntv.com/hive/images/signon/subscriptions/minus_black.png"); }
+/* registration modal */
+#carnivalModalWrapper .nl-container span.plus { background:url("/web/20121026200607im_/http://www.wgntv.com/hive/images/signon/subscriptions/plus_white.png"); }
+#carnivalModalWrapper .nl-container span.minus { background:url("/web/20121026200607im_/http://www.wgntv.com/hive/images/signon/subscriptions/minus_white.png"); }
+
+div.newsletter_description { font-size:10px; margin-left:23px; }
+#profile-content #subscription-form-field div.newsletter_description { font-size:10px; margin-left:23px; }
+
+form#signon-profile div#signon-heading { width:100%; border-bottom: 2px solid #000; color: #000;padding:12px 0; }
+
+.profile-headling{font-family:arial,helvetica,sans-serif;float:left;margin-left:26px; }
+div#signon-heading h1 { color:#FFFFFF; font-family:arial,helvetica,sans-serif; padding:8px 0; }
+p.modal-text { color:#FFFFFF; font-family:arial,helvetica,sans-serif; padding:8px; }
+div#signon-heading h1.profile-headling { color:#000000; }
+div#avpane_e ul li label.prof-label { color:#000000; }
+.profile-tab-nav{float:left; min-height:100%;left:1px;margin-left:20px;margin-top:15px;overflow-x:hidden;overflow-y:hidden;position:relative;padding-bottom:10px;width:23%;}
+.profile-tab-nav ul li { font-family:arial,helvetica,sans-serif; color:#000; }
+#profile-content{min-height:100px;font-family:arial,helvetica,sans-serif;background-color: #FFF;border: 1px solid #000;-moz-border-radius: 5px;-webkit-border-radius: 5px;-o-border-radius: 5px;-moz-box-shadow: 3px 3px 3px #aaa;-webkit-box-shadow: 3px 3px 3px #aaa;-o-box-shadow: 3px 3px 3px #aaa;float:left;padding:10px;width:72%;margin-bottom:20px;}
+.hide{display:none;}
+.signon-frame{border:2px solid #000;-moz-border-radius: 15px;-webkit-border-radius: 15px;-o-border-radius: 15px;margin-bottom: 30px;}
+.login-faq-link{font-family:arial,helvetica,sans-serif;color:blue;margin-left:48px;position:relative;top:18px;}
+.signon-content {background-color: #B9B9B9;background:-moz-linear-gradient(100% 75% 90deg,#B9B9B9, #EAEAEA, #EAEAEA 100%) repeat scroll 0 0 transparent;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#EAEAEA), to(#B9B9B9), color-stop(.6,#B9B9B9)) repeat scroll 0 0 transparent;-moz-border-radius-bottomleft:15px;-moz-border-radius-bottomright:15px;-webkit-border-bottom-left-radius:15px;-webkit-border-bottom-right-radius:15px;-o-border-radius-bottomright:15px;-o-border-radius-bottomright:15px;padding:10px 0;width:100%;}
+.current_tab{border-width: 1px 0 1px 1px;border-color: #000;border-style:solid;-moz-box-shadow: 0px 3px 2px #AAA;-webkit-box-shadow: 0px 3px 2px #AAA;-o-box-shadow: 0px 3px 2px #AAA;background-color: #FFF;padding: 5px;font-weight:bold;}
+.signon-frame .tab{padding: 5px 5px 5px 6px;position: relative;left: -1px;}
+.signon-frame li.tab:hover{background-color: #B9B9B9;cursor:Pointer;}
+.signon-frame-profile .tab{padding: 5px 5px 5px 6px;position: relative;left: -1px;}
+.signon-frame-profile li.tab:hover{background-color: #B9B9B9;cursor:Pointer;}
+span.signon-edit-link{background-color: #eee;border: 1px solid #aaa;-moz-border-radius: 4px;-webkit-border-radius: 4px;-o-border-radius: 4px;float:right;padding:6px 8px;position:relative;left:-10px;top:3px;}
+span.signon-edit-link a{font-family:arial,helvetica,sans-serif;font-weight:bold;}
+span.signon-edit-link a:hover{text-decoration: none;}
+
+/* to deal with 935px in carnival.css .form-group and with 800px in carnival.css .form-list */
+div.form-group-profile, ul.form-group-profile { background-color:#FFFFFF; border:0; }
+div.form-group-profile, ul.form-group-profile { clear:both; margin-bottom:10px; padding:10px 10px; width:660px; }
+ul.form-list { list-style-type:none; }
+ul.form-list-profile { clear:both; float:left; list-style-type:none; width:460px; }
+ul.form-list-personal { clear:both; float:left; list-style-type:none; width:520px; }
+
+#signon-profile #submitbox #signon-cancel{
+	float:left;
+	display:block;
+	height:25px;
+}
+
+
+#acct-info { width:300px; float:left; margin-left:10px; margin-top:10px; }
+#acct-info-form { width:300px; float:left; margin-left:10px; margin-top:10px; }
+#pers-info-form { width:520px; float:left; margin-left:10px; margin-top:10px; }
+#acpane { margin:0px 0px; } 
+#plpane { margin:0px 0px; }
+#nlpane { margin:0px 0px; min-height:75px; }
+#avpane { margin:0px 0px; min-height:110px; padding:10px; }
+#acpane_e { margin:0px 0px; } 
+#plpane_e { margin:0px 0px; }
+#nlpane_e { margin:0px 0px; min-height:75px; }
+#avpane_e { margin:0px 0px; min-height:110px; padding:10px; }
+#acct-links,#acct-links-form { float:left; margin-left:42px; }
+div#acct-links-form h4.profhead { font-family:arial,helvetica,sans-serif; font-size:12px; font-weight:bold; margin:10px; color:#000000; }
+div#newsletter-signup h4.profhead { font-family:arial,helvetica,sans-serif; font-size:12px; font-weight:bold; margin:10px; color:#000000; }
+div#acct-links h4.profhead { font-family:arial,helvetica,sans-serif; font-size:12px; font-weight:bold; margin:10px; color:#000000; }
+div#newsletter-list p { color:#000000; margin-top:8px; margin-left:10px; }
+.add_acct_link { margin-left:14px; }
+#profiframe { margin-left:10px; }	
+fieldset#subscription-form-field ul li label.form_choice { color:#000000; font-weight:normal; }
+fieldset#subscription-form-field ul li div.newsletter_description { color:#000000; }
+#ssor-thanks #signon-heading h1{
+	color:#000;
+}
+#signon-linked-accounts-form { margin:0px 10px 10px; width:250px;}
+#signon-linked-accounts { margin:0px 10px 10px; width:250px;}
+	
+.prof-info-set { margin:0px 0px 38px; }
+div.prof-info-set label.prof-label { color:#000000; }
+div#avpane ul li label.prof-label { color:#000000; }
+.prof-form-set { margin:0px 0px 32px; clear:left; }
+li.prof-form-set input { width:250px; }
+ul.form-list-profile li label.prof-label,ul.form-list-personal li label.prof-label { font-family:arial,helvetica,sans-serif; color:#000; font-size:12px; font-weight:bold; }
+.prof-value { font-family:arial,helvetica,sans-serif; color:#000; font-size:12px; display:block; margin-top:10px; }
+.proffloat50 { float:left; width:50%; clear:none; }
+.proffloat200px { float:left; width:200px; clear:none; }
+.proffloat120px { float:left; width:120px; clear:none; }
+.proffloat130px { float:left; margin-right:20px; width:130px; clear:none; }
+li.proffloat130px input { width:100px; }
+li.proffloat200px input { width:180px; }
+li.proffloat200px select { width:180px; }
+li.proffloat200px select.birthdate-select { width:48px; }
+li.proffloat200px select.birthyear-select { width:62px; }
+li.just200px { width:200px; clear:both; }
+li.just200px select { width:180px; }
+li.proffloat120px input { width:90px; }
+.pwch-label { font-size:12px; font-family:arial,helvetica,sans-serif; margin-left:8px; }
+#pwtoggle { width:14px; }
+
+#termsbox { display:none; margin-left:244px; background-color: #FFF;border: 1px solid #000;-moz-border-radius: 5px;-webkit-border-radius: 5px;-o-border-radius: 5px;-moz-box-shadow: 3px 3px 3px #aaa;-webkit-box-shadow: 3px 3px 3px #aaa;-o-box-shadow: 3px 3px 3px #aaa;float:left;padding:10px;width:72%;margin-bottom:20px; }
+#autermsbox { display:block; margin-left:244px; background-color: #FFF;border: 1px solid #000;-moz-border-radius: 5px;-webkit-border-radius: 5px;-o-border-radius: 5px;-moz-box-shadow: 3px 3px 3px #aaa;-webkit-box-shadow: 3px 3px 3px #aaa;-o-box-shadow: 3px 3px 3px #aaa;float:left;padding:10px;width:72%;margin-bottom:20px; }
+#submitbox { display:none; margin-left:244px; background-color: #FFF;border: 1px solid #000;-moz-border-radius: 5px;-webkit-border-radius: 5px;-o-border-radius: 5px;-moz-box-shadow: 3px 3px 3px #aaa;-webkit-box-shadow: 3px 3px 3px #aaa;-o-box-shadow: 3px 3px 3px #aaa;float:left;padding:0px 10px;width:72%;margin-bottom:20px; }
+#ausubmitbox { display:block; margin-left:244px; background-color: #FFF;border: 1px solid #000;-moz-border-radius: 5px;-webkit-border-radius: 5px;-o-border-radius: 5px;-moz-box-shadow: 3px 3px 3px #aaa;-webkit-box-shadow: 3px 3px 3px #aaa;-o-box-shadow: 3px 3px 3px #aaa;float:left;padding:0px 10px;width:72%;margin-bottom:20px; }
+.optout-box { float:left; width:20px; }
+div.optout-label { float:left; width:632px; margin-left:8px; }
+div.optout-label label { font-family:arial,helvetica,sans-serif; font-size:12px; color:#000000; font-weight:normal; }
+select,option, .formnote { font-size:12px; font-family:arial,helvetica,sans-serif; }
+span.birthformat { color:#666; }
+div#submitbox ul li button#signon-submit { background: url("/web/20121026200607im_/http://www.wgntv.com/hive/images/ssor-submit.png") repeat scroll 0 0 transparent; border: 0 none; cursor: pointer; display: block; float: right; height: 25px; margin: 10px; width: 95px; }
+form#subscription-form div button#signon-submit { background: url("/web/20121026200607im_/http://www.wgntv.com/hive/images/ssor-submit.png") repeat scroll 0 0 transparent; float:none; border: 0 none; cursor: pointer; display: block; height: 25px; margin: 10px 24px 20px; width: 95px; }
+#subscription-form-field { *width:auto; }
+
+/* Following crazy selectors are to assure market overwrite due to css specificity rules */
+#acct-links #signon-linked-accounts div.unlinkLink a { display:none; }
+#signon-linked-accounts-form div.unlinkLink { clear:right; float:left; line-height:60px; margin:5px 5px 5px 20px; vertical-align:middle; background:0; }
+#acct-links-form #signon-linked-accounts-form div.unlinkLink a { color:#666; font-family:arial,helvetica,sans-serif; font-size:12px; text-decoration:underline; }
+
+#profile-content #subscription-form { border:0; margin:0px 0px 0px 10px; }
+#profile-content #subscription-form-field .form-list-title {font-weight:bold;color:#000;font-size:12px;font-style:italic;padding:5px;width:600px;}
+#profile-content #subscription-form-field {border:0;padding:0px;}
+#profile-content #subscription-form-field .form-list { padding-bottom:10px; }
+#profile-content #subscription-form-field div { margin-left:0px; font-size:10px; display:inline-block; }
+/* IE Profile Page NL individual dropdowns hack */
+#profile-content #subscription-form-field span.nl-dd-img { *display:inline-block; *zoom:1; *position:relative; *top:-5px; }
+/* end hack.  weep. */
+#profile-content #subscription-form-field .form-list li { display:block; float:left; clear:none; width:308px; padding:10px 30px 12px 0px; }
+#profile-content #subscription-form-field .form-list li label.form_choice { display:inline;font-size:12px;padding:5px 4px; }
+li.nl-item label.form_choice { display:inline-block;font-size:12px;padding:5px 0px 0px 0px; }
+#profile-content #subscription-form-field .form-list li input {float:left; display:inline;}
+#profile-content #subscription-form-field legend {padding:0px; float:right;}
+div.show_nl_desc { display:block; float:right; cursor:pointer; padding:5px; padding-top:20px; *padding-top:0px; }
+
+#profile-content #subscription-form-field div.show_nl_desc { display:block; float:right; cursor:pointer; padding:5px; padding-top:5px; color:#000000; }
+#profile-content #subscription-form-field div.show_nl_desc span.nl-dd-img { *position:relative; *top:0px; }
+div.nl-header { float:left; clear:left; *width:100%; }
+#profile-content li#avatar-box a { font-size:12px; margin-top:8px; }
+
+.form-incl { border:0; background-color:#FFF; width:680px; }
+
+#profile-content span.change_subscription { margin-left:10px; font-size:12px; }
+#profile-content span.change_subscription img { display:inline; }
+.prof-subs { margin:10px 0px 10px 10px; list-style-type:none; font-size:12px; color:#000000; }
+
+div#section div#signon-heading {margin:0;}
+div#section div.signon-content {margin:0;padding:10px 0 0 0;width:100%;}
+div#section div.profile-content {min-height:300px;margin-bottom:30px;}
+/* end profile styles */
+
+
+#ajax_login_header{
+	display:block;
+	padding:5px 0 0 5px;
+}
+
+#ajax_login_header #ssorNavSignIn{
+	margin:-5px 0 0 -5px;
+}
+
+/****  Header  *****/
+
+#classified-bar{
+	z-index:2137483601;	
+}
+
+div#classBarNav{
+	z-index:2137483603;	
+}
+
+#classified-bar div#classBarNav ul.classBarNavMember{
+	position:absolute;
+	z-index:2137483602;
+	top:0;
+	left:0;
+	padding:0;
+	margin:0;
+}
+
+#ssorNavHeader{
+	padding-left:6px;
+	min-height:16px;
+}
+
+#ssorNavHeader span{
+	color:#fff;
+}
+
+#ssorNavHeader a:hover{
+	text-decoration:underline;	
+}
+
+#ssorNavSignIn{
+	width:220px;
+	font-size:12px;
+	z-index:2147483605;
+	font-family: helvetica,arial sans-serif;
+	text-transform:none;
+}
+
+#ssorNavHeader,
+#ssorMiniModal{
+background-color:#353535	
+}
+
+#ssorMiniModal{
+	float:left;
+	padding: 0 5px;
+}
+
+#ssorNavSignIn #ssorMiniModal ul li a{
+	background-color:none;
+}
+
+div#classBarNav #ssorNavSignIn span.link,
+div#classBarNav #ssorNavSignIn a {
+    color: #FFFFFF;
+    font-weight: bold;
+    line-height: 16px;
+	background-color:transparent !important;
+	cursor:pointer;
+}
+
+div#classBarNav, div#classBarNavMember, div#memberLoginInfo { clear:both; }
+
+#signInLink{
+	margin-right:3px;	
+}
+
+#signUpLink{
+	margin-left:3px;	
+}
+
+div#classBarNav #ssorNavSignIn span.link:hover{
+	text-decoration:underline;
+}
+
+#classBarNav #ssorNavSignIn #carnivalModal a#carnivalModalClose{
+	background-color:#000 !important;
+}
+
+#carnivalModalHead{
+	line-height:12px !important;
+}
+
+#carnivalModalClose{
+	background-color:#000 !important;
+	color:#fff !important;
+	font-size:10px;
+	font-family:helvetica,arial sans-serif;
+	line-height:14px !important;
+	float:right;
+	width:50px;
+	padding:1px 0;
+	text-align:center;
+}
+
+#carnivalModalClose .carnivalCloseButton{
+	cursor:pointer;
+}
+
+#iframeWrapper{
+	overflow:hidden;
+}
+
+#carnivalModal.vertical #iframeWrapper{
+	width:220px;
+	height:318px;
+	position:relative;
+}
+
+#carnivalModal #iframeWrapper{
+	position:relative;
+	background-color:#000;
+}
+
+/******************************************
+	Default for non-socket transport iframes
+*******************************************/
+
+#carnivalModal iframe{
+	width:525px;
+	height:280px;
+	position:relative;
+	left:-2px;
+	top:-2px;
+}
+
+*+html #carnivalModal iframe{
+	height:285px
+}
+
+* html #carnivalModal iframe{
+	height:285px
+}
+
+
+#carnival_cap #adcopy-outer iframe{
+	width:auto;
+	height:auto;
+}
+
+*+html #carnivalModal iframe{
+	top:-4px;
+}
+
+* html #carnivalModal iframe{
+	top:-4px;
+}
+
+*+html #carnivalModal #carnivalFooter{
+	background-color:#000;
+	height:5px;
+	margin-top:-5px;
+}
+
+* html #carnivalModal #carnivalFooter{
+	background-color:#000;
+	height:3px;
+}
+
+*+html .Main #carnivalModal.horizontal #carnivalContent{
+	height:283px !important;
+}
+
+*+html .Main #carnivalModal.horizontal #carnivalContent iframe{
+	height:288px !important;
+}
+
+*+html #carnivalModal.horizontal.registration #carnivalContent{
+	background-color:transparent;
+}
+
+* html #carnivalModal.horizontal.registration #carnivalContent{
+	background-color:transparent;
+}
+
+* html .Main #carnivalModal.horizontal #carnivalContent{
+	height:255px !important;
+}
+
+*+html #carnivalModal.horizontal.registration #carnivalContent,
+*+html #carnivalModal.horizontal.subscription #carnivalContent{
+	height:auto !important;
+}
+
+* html .Main #carnivalModal.horizontal #carnivalContent{
+	height:255px !important;
+}
+
+* html #carnivalModal.horizontal.registration #carnivalContent,
+* html #carnivalModal.horizontal.subscription #carnivalContent{
+	height:auto !important;
+}
+
+*+html #carnivalModal.horizontal iframe{
+	top:-5px;
+}
+
+*+html .Main #carnivalModal.horizontal iframe{
+	height:260px !important;
+}
+
+* html #carnivalModal.horizontal iframe{
+	top:-5px;
+}
+
+#carnivalModal.vertical iframe{
+	width:220px;
+	height:318px;
+}
+
+#carnivalModal{
+	width:520px;
+}
+
+#carnivalModal.sticky,
+#carnivalModal.nonSticky{
+	background-color: #353535;
+    font-family: serif;
+    font-size: 13px;
+    text-transform: none;
+    z-index: 2147483605;
+	position:absolute;
+}
+
+#carnivalModal.sticky{
+	left: 0;
+    top: 26px;
+}
+
+#carnivalModal.nonSticky{
+	top:100px;
+	left:400px;
+}
+
+#carnivalModal.vertical,
+#carnivalModal.vertical #miniModalFrame{
+	width:220px;
+}
+
+#carnivalModal.horizontal.nonSticky{
+	border-radius:15px;
+	-webkit-border-radius:15px;
+	-moz-border-radius:15px;
+	border:5px solid #000;
+}
+
+#carnivalModal.horizontal,
+#carnivalModal.horizontal #miniModalFrame{
+    width: 520px;
+}
+
+#carnivalModal.vertical #iframeWrapper iframe,
+#carnivalModal.vertical,
+#carnivalModal.vertical #ssorModalIframe{
+	width:220px;
+	height:322px;
+}
+#carnivalModal.vertical #iframeWrapper iframe{
+	width:222px;
+}
+
+#carnivalModal.vertical{
+	height:332px;
+}
+
+#carnivalModal.horizontal #iframeWrapper{
+	height:218px;
+}
+
+#carnivalModal.horizontal #iframeWrapper iframe,
+#carnivalModal.horizontal #ssorModalIframe{
+	width:522px;
+	height:220px;
+}
+
+#carnivalModal.horizontal.avatarWrapper iframe{
+	overflow:hidden;
+	width:455px;
+	height:200px;
+	margin:10px;	
+}
+
+* html #carnivalModal.vertical iframe,
+* html #carnivalModal.vertical #iframeWrapper{
+	height:328px;
+}
+
+*+html #carnivalModal.vertical iframe,
+*+html #carnivalModal.vertical #iframeWrapper{
+	height:328px;
+}
+
+/* DANGER!  OVERLAY! */
+
+#carnivalModalOverlay {position:fixed;top:0px;left:0px;height:100%;width:100%;background:#333;z-index:2137483603;display:none;}
+
+/*****************************************
+		Menu Navigation - Logged In
+******************************************/
+
+#ssorNavSignIn.loggedIn{
+	overflow:hidden;
+}
+
+#ssorNavSignIn.loggedIn #ssorMiniModal{
+	background-color:#353535;
+}
+
+#ssorNavSignIn.loggedIn .userName{
+	padding-left:15px;
+	background: url("/web/20121026200607im_/http://www.wgntv.com/hive/images/signon/modal/nav_down_arrow.png") no-repeat 0 2px;
+	margin-right:8px;	
+}
+
+#ssorNavSignIn.loggedIn #ssorNavHeader{
+	text-align:left;
+}
+
+#ssorNavSignIn.loggedIn,
+#ssorNavSignIn.loggedIn #ssorMiniModal,
+#ssorNavSignIn.loggedIn #ssorMiniModal #ssorNavBody{
+	border-bottom-right-radius:5px;
+	-moz-border-radius-bottomright:5px;
+	border-bottom-left-radius:5px;
+	-moz-border-radius-bottomleft:5px;
+	-webkit-border-bottom-right-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+}
+
+#ssorNavSignIn.loggedIn #ssorMiniModal ul li a{
+	background-color:none;
+}
+
+#ssorNavSignIn.loggedIn #ssorMiniModal #ssorNavBody a:hover{
+	text-decoration:underline;	
+}
+
+#ssorNavSignIn.loggedIn #ssorMiniModal #ssorNavBody{
+	padding-right:10px;
+	width:60px;
+	float:left;
+}
+
+/*****************************************
+	Forgot Password Modal
+******************************************/
+
+#ssorPasswordModal{
+	font-family: helvetica, arial sans-serif;
+	font-size:14px;
+	color:#fff;
+	margin-top:20px;
+	width:450px;
+	height:150px;
+	background: #000 url("/web/20121026200607im_/http://www.wgntv.com/hive/images/signon/modal/modal_background.jpg") repeat-x center;	
+	border:2px solid #000;
+	border-radius:20px;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	position:absolute;
+	left:400px;
+	top:200px;
+	z-index:30000;
+	padding:20px;
+}
+
+#ssorPasswordModal p{
+	margin-bottom:10px;
+}
+
+#ssorPasswordModal .lostPasswordTitle{
+	display:block;
+	font-size:18px;
+	margin-bottom:10px;
+}
+
+#ssorPasswordModal label,
+#ssorPasswordModal .inputField{
+	display:block;
+}
+
+#ssorPasswordModal .inputField{
+	width:250px;
+}
+
+
+/*****************************************
+	Old Modal overrides
+******************************************/
+
+#carnivalModal .carnival-flash{
+	margin-bottom:10px;
+}
+
+#signonSubmits .cancelForm{
+	display:inline;
+	margin-left:10px;
+}
+#signonSubmits .cancelForm span{
+	display:inline;
+}
+
+#signonSubmits .cancelForm span.cancel{
+	cursor:pointer;
+}
+
+.signon-frame{
+	font-family: helvetica, arial sans-serif;
+	color:#fff;
+	text-align:left;
+	padding:10px;
+}
+
+.signon-frame-profile{
+	font-family: helvetica, arial sans-serif;
+	color:#fff;
+	text-align:left;
+	padding:0px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-o-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	border: 2px solid #000000;
+	margin-bottom: 30px;
+	font-size:12px;
+}
+
+.signon-frame p, 
+.signon-frame h1, 
+.signon-frame h2, 
+.signon-frame h3, 
+.signon-frame h4, 
+.signon-frame h5,
+.signon-frame label{
+	color:#fff;
+	font-weight:bold;
+	font-size:13px;	
+	margin-bottom:5px;
+}
+
+.signon-frame p{
+	font-size:12px;
+}
+
+.signon-frame h1, 
+.signon-frame h2, 
+.signon-frame h3, 
+.signon-frame h4, 
+.signon-frame h5{
+	font-size:15px;
+}
+
+.signon-frame #signon-heading{
+	font-size:12px;
+	border:none;
+}
+
+.signon-frame .carnivalFormBlock p{
+	margin-top:0;
+}
+
+.signon-frame .carnivalFormBlock p#thanksCopy{
+	width:auto;
+}
+
+.signon-frame .carnivalFormBlock .form-list input,
+.signon-frame .carnivalFormBlock .form-list label{
+	display:block;
+	margin:10px 0;
+}
+
+.signon-frame .carnivalFormBlock .form-list input{
+	width:250px;
+}
+
+.signon-frame .carnival-error,
+#carnivalContent .signon-frame .signon-error label.error
+{
+	color:#f00;
+	margin:5px 0;
+	font-weight:bold;
+}
+
+div#signonSubmits button#signon-submit{
+	background: url("/web/20121026200607im_/http://www.wgntv.com/hive/images/signon/button/button_signin.png") no-repeat 0 0;
+	border:none;
+	width:80px;
+	height:25px;
+	padding-bottom:5px;
+	margin:-right:5px 0;
+	display: inline;
+	font-weight:bold;
+	float:none;
+}
+
+#signonSubmits span{
+	display:block;
+}
+
+
+#carnivalInnercontent #email_address_taken,
+#carnivalInnercontent h1{
+	color:#fff;
+}
+
+#email_address_taken{
+	margin-bottom:10px;
+}
+/*****************************************
+	SSOR Progressive Registration 
+******************************************/
+
+#proRegNewsletters,
+#proRegNewsletters legend{
+	color:#fff;
+}
+
+#proRegNewsletters fieldset{
+border:1px solid #fff;
+padding-left:10px;
+margin: 0 5px;
+}
+
+#proRegNewsletters legend{
+	font-weight:bold;
+	font-size:16px;
+	margin:0 0 3px 10px;
+}
+
+#proRegNewsletters ul{
+	
+}
+
+#proRegNewsletters ul li{
+	float:left;
+	width:45%;
+	margin-bottom:10px;
+}
+
+#proRegNewsletters ul li .subscriptions{
+	float:left;
+}
+
+
+#proRegNewsletters ul li .newsletterName{
+	float:left;
+	margin-left:5px;
+}
+
+
+#proRegNewsletters ul li .newsletterDescription{
+	clear:both;
+	margin:5px 0 0 19px;
+	text-align:left;
+	
+}
+
+#carnivalModal #proRegNewsletters p{
+	padding:0 0 5px 0;
+	color:#fff;
+}
+
+/*****************************************
+	SSOR Signup Modal
+******************************************/
+
+div#showPassword { display:none; }
+
+#carnivalModal.registration #carnivalModalHead{
+	display:none;
+}
+
+#carnivalModal.registration.horizontal.nonSticky{
+	font-family: helvetica, arial sans-serif;
+	font-size:14px;
+	color:#fff;
+	margin-top:20px;
+	width:650px;
+	border:10px solid #000;
+	border-radius:20px;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	position:absolute;
+	left:300px;
+	z-index:2147483400;
+	top:50px;
+	text-align:left;
+}
+
+#carnivalModal.registration{
+	min-height:620px;
+}	
+
+#carnivalModal.registration #carnivalModalWrapper #carnivalContent{
+	padding:0;
+}
+
+#carnivalModal.registration .error,
+#carnivalModal.registration .agreement .error,
+#signon-profile .error{
+	color:#F00;
+	font-weight:bold;
+	font-size:12px;
+	display:block;
+	margin-bottom:5px;
+}
+
+#carnivalModal.registration .carnival-error{
+	color:#F00;
+	margin-bottom:5px;
+}
+
+#carnivalModal.registration .agreement .signon-error label,
+#carnivalModal.registration .agreement label.error
+{
+	margin-bottom:3px;
+	color:#F00;
+	font-size:12px;
+	font-weight:bold;
+}
+
+#carnivalModal.registration .signon-error{
+	margin-bottom:5px;
+}
+
+#carnivalModal.registration .gender  .signon-error{
+	margin-top:5px;
+}	
+
+#carnivalModal.registration a:link,
+#carnivalModal.registration a:visited{
+	color:#fff;
+	text-decoration:underline;
+}
+
+#carnivalModal.registration #ssorModalHeader{
+		padding:5px 5px 5px 38px;
+}
+
+#carnivalModal.registration #ssorModalHeader .signonTitle{
+	float:left;
+}
+
+
+#carnivalModal.registration #ssorModalHeader #closeModal{
+	float:right;
+	cursor:pointer;
+}
+
+#carnivalModal.registration #ssorModalBody .leftContainer{
+	float:left;
+	padding-left:38px;
+	width:390px;
+}
+
+#carnivalModal.registration #ssorModalBody .showPassword{
+	margin-bottom:10px;
+}
+
+#carnivalModal.registration .zipCode{
+	float:left;	
+	margin-right:50px;
+}
+
+*+html #carnivalModal.registration .zipCode{
+	margin-right:30px;
+} 
+
+* html #carnivalModal.registration .zipCode{
+	margin-right:30px;
+}
+
+#carnivalModal.registration .zipCode label{
+	margin-bottom:10px;
+}
+
+#carnivalModal.registration .gender{
+	float:left;	
+}
+
+#carnivalModal.registration .birthday{
+	margin-bottom:10px;
+}
+
+#carnivalModal.registration .gender .female{
+	margin-right:15px;
+}
+
+#carnivalModal.registration #ssorModalBody .rightContainer{
+	float:right;
+	width:200px;
+	padding-left:20px;
+	border-left:1px solid #fff;
+}
+
+#carnivalModal.registration .birthday .selectList{
+	color:#000;
+	float:left;
+	margin-right:10px;
+	position:relative;	
+}
+
+#carnivalModal.registration .birthday .selectContent{
+	background: url("/web/20121026200607im_/http://www.wgntv.com/hive/images/signon/modal/option_background.jpg") repeat-x scroll 0 0;
+	display:block;
+	cursor:pointer;
+	border-right:1px solid #939393;;
+	border-bottom:1px solid #939393;
+	float:left;
+	width:75px;
+	padding:4px 2px 2px 2px;
+	text-align:center;
+	height:15px;
+}
+
+#carnivalModal.registration .birthday .selectArrow{
+	display:block;
+	border-bottom:1px solid #939393;
+	background: url("/web/20121026200607im_/http://www.wgntv.com/hive/images/signon/modal/option_dropdown.jpg") no-repeat scroll 0 0;
+	width:25px;
+	height:21px;
+	float:left;
+}
+
+#carnivalModal.registration .birthday .selectOptions{
+	background-color:#FFF;
+	overflow: auto;
+	height:170px;
+	width:105px;
+	top:22px;
+	position:absolute;
+	display:none;
+	z-index:2147483645;
+}
+
+#carnivalModal.registration .selectOptions span{
+	display:block;
+	padding-left:3px;	
+	cursor:pointer;
+	position:relative;
+	z-index:2147483647;
+}
+
+#carnivalModal.registration .selectOptions span:hover{
+	background-color:#666;
+}
+
+#carnivalModal.registration label,
+#carnivalModal.registration .inputField{
+		display:block;
+}
+
+#carnivalModal.registration label{
+		color:#FFF;	
+}
+
+#carnivalModal.registration .inputField,
+#carnivalModal.registration .email label,
+#carnivalModal.registration .zipcode label,
+#carnivalModal.registration .gender label{
+	margin:0 0 10px;	
+}
+
+#carnivalModal.registration .gender label{
+	margin-bottom:20px;
+}
+
+#carnivalModal.registration .gender .signon-error{
+	margin-top:10px;
+}
+	
+#carnivalModal.registration .inputField{
+	height:20px;
+	font-size:13px;
+}
+
+#carnivalModal.registration .inputField.large{
+	width:323px;
+}
+
+#carnivalModal.registration .inputField.small{
+	width:116px;
+}
+
+#carnivalModal.registration .checkbox,
+#carnivalModal.registration .radioButton{
+	margin-right:5px;
+}
+
+#carnivalModal.registration .gender .form_radio_container{
+	display:block;
+}
+
+#carnivalModal.registration .gender .form_radio_container input,
+#carnivalModal.registration .gender .form_radio_container label{
+	float:left;
+	margin: 0 10px 0 0;
+}
+
+#carnivalModal.registration .gender .form_radio_container input{
+	margin-right:3px;
+}
+
+#carnivalModal.registration li{
+	margin-top:13px;
+}
+
+#benefitsContainer{
+	margin-bottom:40px;
+}
+
+#benefitsContainer .benefit{
+	margin-bottom:20px;	
+}
+
+#benefitsContainer .benefit.last{
+	padding-bottom:40px;
+}
+
+#benefitsContainer .benefit img,
+#benefitsContainer .benefit span{
+
+}
+
+#benefitsContainer .benefit span{
+	display:block;
+	margin-bottom:10px;
+}
+
+#benefitsContainer .benefit .sameline{
+	display:inline;
+}
+
+#benefitsContainer .benefit .afterSameLine{
+	margin-top:10px;
+}
+
+#benefitsContainer .benefit img{
+	margin: 14px 145px 10px 0;
+}
+
+#carnivalModal.registration label,
+#carnivalModal.registration .label,
+#carnivalModal.registration .signonTitle{
+	font-weight:bold;
+}
+
+#carnivalModal.registration .signUpTitle{
+	font-size:24px;
+	float:left;
+	margin:15px 0;
+}
+
+#carnivalModal.registration .benefitsTitle{
+	display:block;
+	font-size:18px;
+	margin-bottom:10px;
+}
+
+#carnivalModal.registration .fieldNotes,
+#carnivalModal.registration .agreement label,
+#carnivalModal.registration .agreement span,
+#carnivalModal.registration .showPassword,
+#carnivalModal.registration #userNameAvailable{
+	font-size:11px;	
+	color:#fff;
+	margin-bottom:5px;
+}
+
+#carnivalModal.registration #userNameAvailable{
+	margin-top:5px;
+}
+
+
+#carnivalModal.registration li.email{
+	margin-top:0;
+}
+
+#carnivalModal.registration .agreement label,
+#carnivalModal.registration .fieldNotes{
+	font-weight:normal;
+}
+
+#carnivalModal.registration .fieldNotes.small,
+#carnivalModal.registration .agreement .small{
+	width:340px;
+}
+
+#carnivalModal.registration .agreement{
+	width:360px;
+}
+
+#carnivalModal.registration .agreement .small{
+	padding-left:17px;
+}
+
+*+html #carnivalModal.registration .agreement .small{
+	padding-left:0;
+}
+
+
+* html #carnivalModal.registration .agreement .small{
+	padding-left:0;
+}
+
+
+#carnivalModal.registration .agreement .small input{
+	margin-left:-17px;
+}
+
+#carnivalModal.registration .agreement li input{
+	float:left;
+}
+
+#carnivalModal.registration #signonSubmits{
+	margin:20px 0 10px 0;
+}
+
+#carnivalModal.registration #signonSubmits button{
+	background: url("/web/20121026200607im_/http://www.wgntv.com/hive/images/signon/button/button_submit.png") no-repeat 0 0;
+	border:none;
+	width:100px;
+	height:35px;
+	margin-right:10px;
+	display: block;
+	float:left;
+}
+
+#carnivalModal.registration #signonSubmits span{
+	display:block;
+	float:left;
+	margin-top:10px;
+}
+
+#carnivalModal.registration .opt-out label.form_choice.label{
+	width:300px;
+}
+
+#carnivalModal.registration .toolTip,
+#carnivalModal.registration .agreement span.help{
+	position:relative;
+	display:block;
+}
+
+#carnivalModal.registration .toolTipWrapper{
+	position:relative;
+	width:310px;
+	height:15px;
+}
+
+#carnivalModal.registration .agreement span.help{
+	top:-30px;
+	right:-330px;
+}
+
+#carnivalModal.registration .toolTipDialog{
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	position:absolute;
+	z-index:2147483420;
+	border:1px solid #000;
+	background-color:#555;
+	padding:5px;
+	width:170px;
+	top:0;
+	left:12px;
+	background: rgb(255, 255, 255);
+	/* RGBa with 0.6 opacity */
+	background: rgba(255, 255, 255, 0.80);
+	/* For IE 5.5 - 7*/
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";	
+}
+
+#carnivalModal.registration .toolTipDialog p{
+	margin-top:0;
+	width:auto;
+	padding-left:0;
+}
+
+#carnivalModal.registration #carnivalModalWrapper .agreement span.help .toolTipDialog a,
+#carnivalModal.registration #carnivalModalWrapper .agreement span.help .toolTipDialog p,
+#carnivalModal.registration .agreement span.help .toolTipDialog p{
+	color:#000;
+}
+
+#carnivalModal.registration #emailConfirm{
+	font-size:11px;
+	margin-bottom:10px;
+}
+
+#carnivalModal.registration #signon-cancel{
+	font-size:12px;
+}
+
+#carnivalModal.registration .hide{
+	display:none;
+}
+
+#carnivalModal.registration .show{
+	display:block;
+}
+
+#carnivalModal.registration #carnival_cap{
+	margin-bottom:10px;
+	margin-top:0;
+}
+
+#carnivalModal.registration #recommendedUserName{
+	float:left;
+}
+
+#carnivalModal.registration .recaptcha_input_area_text #recaptcha_instructions_image{
+	color:#000;
+}
+
+/*****************************************
+	Subscription Modal
+******************************************/
+
+#carnivalModal.subscription #carnivalModalHead{
+	display:none;
+}
+
+#carnivalModal.subscription #signonSubmits{
+	margin-bottom:10px;
+}
+
+#carnivalModal.subscription #signonSubmits button{
+	background: url("/web/20121026200607im_/http://www.wgntv.com/hive/images/signon/button/button_submit.png") no-repeat 0 0;
+	border:none;
+	width:100px;
+	height:35px;
+	margin-right:10px;
+	display: block;
+	float:left;
+}
+
+#carnivalModal.subscription #signonSubmits span{
+	display:block;
+	float:left;
+	margin-top:15px;
+}
+
+#carnivalModal.subscription #signonSubmits span a {
+	color:#FFFFFF;
+}
+
+#carnivalModal.subscription{
+	font-family: helvetica, arial sans-serif;
+	font-size:14px;
+	color:#fff;
+	margin-top:20px;
+	width:800px;
+	*width:820px;
+	border:10px solid #000;
+	border-radius:20px;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	position:absolute;
+	left:300px;
+	z-index:2147483400;
+	top:50px;
+	text-align:left;
+}
+
+#carnivalModal.subscription #carnivalContent .modal-nl-form,
+#carnivalModal.subscription #carnivalContent .form-buttons
+{
+	background-color:transparent;
+	border:none;
+}
+
+#carnivalModal.subscription #signon-heading h2.signon-title {
+	float:left;
+}
+
+#carnivalModal.subscription .signon-frame h3.modalNLHeader {
+	clear:both;
+	line-height:28px;
+}
+
+#carnivalModal.subscription #signon-heading #closeModal{
+	float:right;
+	cursor:pointer;
+}
+
+#cap_message{
+	margin-top:10px;
+	color:#F00;
+}
+
+#carnivalModal.horizontal #carnivalContent{
+	overflow:hidden;
+	position:relative;
+	top:2px;
+}
+
+#carnivalModal.horizontal.registration #carnivalContent{
+	overflow:visible;
+	position:static;
+	top:2px;
+}
+
+
+/****************************************
+	Progressive Registration
+*****************************************/
+
+#carnivalModal #amList, #carnivalModal #prForm_submits { font-family:arial,helvetica; font-size:14px; text-align:left; padding:4px 8px 4px 20px; }
+#prForm_dontask { font-family:arial,helvetica; font-size:14px; text-align:left; padding:4px 8px 4px 22px; }
+
+#carnivalModal p { text-align:left; font-family:arial,helvetica; font-size:14px; padding-left:20px; }
+/* #carnivalModal #amList li input, #carnivalModal #amList li textarea { width:300px; } */
+
+span.am_text, span.am_textarea, span.am_select { display:block; }
+span.radiolabel, span.am_checkbox { padding:0px 8px; }
+span.optionSpan { font-size:11px; }
+
+#carnivalModal span.error { display:block; font-size:11px; color:#FF0000; }
+
+
+#carnivalModal input.amText { width:300px; }
+#carnivalModal select.amSelect { width:200px; }
+#carnivalModal input.amCheckbox {  }
+#carnivalModal input.amRadio {  }
+#carnivalModal textarea.amTextarea { width:300px; }
+
+#carnivalModal input#dontAskCheck { padding-left:2px; }
+
+#carnivalModal #prForm { padding:20px 0px; color:#FFFFFF; }
+#carnivalModal #prForm_cancel { color:#FFFFFF; }
+
+#carnivalModal #amList ul { margin-left:20px; }
+
+#carnivalModal #amList li { padding:8px 2px 2px; }
+#carnivalModal #amList li span.PRoptional { font-size:11px; }
+
+#carnivalModal #prForm_submits #prForm_submit { display:block; background: url("/web/20121026200607im_/http://www.wgntv.com/hive/images/ssor-submit.png") repeat scroll 0 0 transparent; border: 0 none; cursor: pointer; height: 25px; margin: 10px 0px; width: 95px; }
+#carnivalModal #prForm_submits #prForm_or { display:inline-block; margin:0px 8px; }
+
+#carnivalModal #amList input, #carnivalModal #amList select { font-family:arial,helvetica; font-size:14px; padding:2px; }
+
+/*****************************************
+	Float Clearing
+******************************************/
+
+* html #carnivalModal #signonSubmits,
+* html .form_radio_container,
+* html #carnivalModal.registration .birthday .selectWrapper,
+* html .benefit,
+* html #classBarNav,
+* html #classBarNavMember,
+* html #memberLoginInfo,
+* html #carnivalModal.registration .agreement li,
+* html .form_radio_container,
+* html .birthday,
+* html #ssorMiniModal,
+* html #carnivalModal.registration .leftContainer,
+* html #carnivalModal.registration .centerContainer,
+* html #ssorModalBody,
+* html #ssorModalHeader,
+* html #carnivalModalHead,
+* html .agreement li,
+* html .clearfix {
+	height: 1%;
+	overflow: visible;
+}
+
+*+html #carnivalModal #signonSubmits,
+*+html .form_radio_container,
+*+html #carnivalModal.registration .birthday .selectWrapper,
+*+html .benefit,
+*+html #classBarNav,
+*+html #classBarNavMember,
+*+html #memberLoginInfo,
+*+html #carnivalModal.registration .agreement li,
+*+html .form_radio_container,
+*+html .birthday,
+*+html #ssorMiniModal,
+*+html #carnivalModal.registration .leftContainer,
+*+html #carnivalModal.registration .centerContainer,
+*+html #ssorModalBody,
+*+html #ssorModalHeader,
+*+html #carnivalModalHead,
+*+html .agreement li,
+*+html .clearfix {
+	min-height: 1%;
+}
+
+#carnivalModal #signonSubmits:after,
+.form_radio_container:after,
+#carnivalModal.registration .birthday .selectWrapper:after,
+.benefit:after,
+#classBarNav:after,
+#classBarNavMember:after, 
+#memberLoginInfo:after,
+#carnivalModal.registration .agreement li:after,
+.form_radio_container:after,
+.birthday:after,
+#ssorMiniModal:after,
+#carnivalModal.registration .leftContainer:after,
+#carnivalModal.registration .centerContainer:after,
+#ssorModalBody:after,
+#ssorModalHeader:after,
+#carnivalModalHead:after,
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+a#reply_text_link,
+a#reply_text_unlink {
+ display: none;
+}
+
+/*
+     FILE ARCHIVED ON 20:06:07 Oct 26, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:47:57 Sep 07, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.941
+  exclusion.robots: 0.046
+  exclusion.robots.policy: 0.028
+  esindex: 0.017
+  cdx.remote: 39.356
+  LoadShardBlock: 151.791 (3)
+  PetaboxLoader3.datanode: 145.143 (5)
+  PetaboxLoader3.resolve: 180.842 (3)
+  load_resource: 198.718 (2)
+*/

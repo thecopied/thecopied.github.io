@@ -1,0 +1,59 @@
+div#footer {margin: 0px 0; padding: 10px; display: inline-block;}
+div#footer div#siteOverview {padding-bottom: 10px;}
+div#footer div#siteOverview ul{width: 160px; float: left;}
+div#footer div#siteOverview ul li ul{padding-top: 0px;}
+div#footer div#siteOverview ul li ul li a.mainOverviewLink,
+div#footer div#siteOverview ul li a.mainNav{font-size: 20px; line-height: 40px;}
+div#footer div#siteOverview ul li a{font-weight: normal; font-size: 12px;}
+div#footerContainer {display:inline-block; width:100%;}
+div#footer div#footerlogo {float:left;}
+div#footer div#footertext {float:right;}
+div#footer div#footertext ul.links {padding-bottom: 3px;}
+div#footer div#footertext ul.links li { display: inline; padding: 0px 4px; font-weight: normal; border-right: 1px solid #3a3939; }
+div#footer div#footertext ul.links li.firstMenuItem {padding-left: 0px;border-left: none;}
+div#footer div#footertext ul.links li.lastMenuItem {border-right: 0px solid #3a3939;}
+div#footer div#footertext ul.links li a {color: #3a3939; font-weight:normal; white-space:nowrap;}
+
+div.family {
+    text-align: center;
+    font-style: italic;
+    padding: 5px;
+}
+
+div#physical-address {
+    text-align: center;
+}
+
+div#physical-address address{
+	color: #333333;
+	font-size: 11px;
+}
+
+div#advertiserFooterContainer {border-top:1px solid;margin-top: 100px;margin-bottom: 20px;}
+div#advertiserFooterContainer div#footertext .footertext_container {margin-left:160px;margin-right:160px;margin-top:15px;}
+div#advertiserFooterContainer div#footertext .footertext_container .divider {border-left:1px #000 solid;}
+div#advertiserFooterContainer div#footertext .footertext_container .single_column ul li {float:left; margin-right:10px;}
+div#advertiserFooterContainer div#footertext .footertext_container .adss_column {padding:10px;}
+div#advertiserFooterContainer div#footertext .footertext_container .adss_column ul li {margin-bottom:5px;} 
+div#advertiserFooterContainer div#footertext .footertext_container td {vertical-align:top;}
+
+/*
+     FILE ARCHIVED ON 20:06:03 Oct 26, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:47:56 Sep 07, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.511
+  exclusion.robots: 0.026
+  exclusion.robots.policy: 0.016
+  esindex: 0.01
+  cdx.remote: 34.636
+  LoadShardBlock: 813.217 (3)
+  PetaboxLoader3.resolve: 357.463 (5)
+  PetaboxLoader3.datanode: 615.379 (5)
+  load_resource: 179.062 (2)
+*/

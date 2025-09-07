@@ -1,0 +1,106 @@
+/* Common */
+body.express-left-nav #header, body.express-no-nav #header, body.express-top-nav #header {margin-bottom: 15px;}
+#footer {clear: both;}
+.adContainer {margin: 10px 0px;}
+
+/* Left Navigation */
+body.express-left-nav {}
+
+body.express-left-nav #container {text-align: left; width: 980px; padding: 0px 10px; margin: 0px auto;}
+
+body.express-left-nav #searchBox {margin: 0px 0px 10px 15px;}
+
+body.express-left-nav div#navigation {float: left; width: 210px; height:auto; margin-right: 10px;}
+
+body.express-left-nav div#weatherbug {height:65px; left:480px; position:absolute; right:0; top:25px; width:96px;}
+
+body.express-left-nav div#hotTopic {color:#000; float:left; margin:10px 0; width:755px;}
+
+body.express-left-nav div#navigation div#search {float: none; position: relative;}
+body.express-left-nav div#navigation ul#root li.highlight {height: auto;}
+body.express-left-nav ul#root li {float: none; text-align: left;}
+body.express-left-nav ul#root li a {float: none;}
+body.express-left-nav ul#root li.hideMainNav {display: none;}
+body.express-left-nav ul#root li.hideMainNav ul.level2 {display: none;}
+/* Nest-list left nav: */
+/* body.express-left-nav ul#root li ul.level2 {display: block; margin:5px; position:relative; top:0; left:0;}*/
+/* Fly-out left nav: (999 because nav should always be on top) */
+body.express-left-nav ul#root li ul.level2 {left:210px; top: 0px; z-index:999; display: none; width: 200px; padding: 10px;}
+body.express-left-nav ul#root li:hover ul.level2, body.express-left-nav ul#root li.highlight ul.level2 {display:block;}
+
+body.express-left-nav div#section {float: left; width: 760px;}
+
+body.express-left-nav #topLeftWide, 
+body.express-left-nav #middleLeftWide {float: left; width: 405px; margin-left: 0px;}
+
+body.express-left-nav #topLeftNarrow, 
+body.express-left-nav #middleLeftNarrow {float: left; width: 330px; padding-right: 5px;}
+
+body.express-left-nav #topRightWide, 
+body.express-left-nav #middleRightWide {float: left; width: 410px; padding-right: 0px;}
+
+body.express-left-nav #topRightNarrow, 
+body.express-left-nav #middleRightNarrow {float: left; width: 335px;}
+
+/* No Navigation */
+/* NOTE: no nav and top nav styles are identical except for the display of the navigation */
+body.express-no-nav {}
+body.express-no-nav div#navigation {display: none;}
+
+/* Top Navigation */
+/* NOTE: no nav and top nav styles are identical except for the display of the navigation */
+body.express-top-nav {}
+body.express-top-nav div#navigation {width: 980px; margin-bottom: 25px;}
+body.express-top-nav ul#root li {cursor:pointer; display:block; float:left; font-weight:700; list-style-type:none; padding:5px 7px; text-align:center; width:auto;}
+body.express-top-nav ul#root li a {}
+body.express-top-nav ul#root li ul.level2 {display: block;}
+body.express-top-nav div#weatherbug{height:65px; position:absolute; right:200px; top:100px; width:96px; z-index:100;}
+
+body.express-no-nav #container,
+body.express-top-nav #container {text-align: left; width: 980px; padding: 0px 10px; margin: 0px auto;}
+
+body.express-no-nav #middleLeft, 
+body.express-top-nav #middleLeft {float: left; width: 255px;}
+
+body.express-no-nav #topLeftWide,
+body.express-no-nav #middleLeftWide,
+body.express-top-nav #topLeftWide, 
+body.express-top-nav #middleLeftWide {float: left; width: 525px;}
+
+body.express-no-nav #topLeftNarrow, 
+body.express-no-nav #middleLeftNarrow, 
+body.express-top-nav #topLeftNarrow, 
+body.express-top-nav #middleLeftNarrow {float: left; width: 400px; padding-right: 5px; margin-left: 10px;}
+
+body.express-no-nav #topRightWide,
+body.express-no-nav #middleRightWide,
+body.express-top-nav #topRightWide,
+body.express-top-nav #middleRightWide {padding-left: 5px; float: left; width: 550px;}
+
+body.express-no-nav #topRightNarrow, 
+body.express-no-nav #middleRightNarrow,
+body.express-top-nav #topRightNarrow, 
+body.express-top-nav #middleRightNarrow {float: left; width: 430px;}
+
+body.express-no-nav #middleCenter,
+body.express-top-nav #middleCenter {float: left; width: 260px; margin-left: 10px;}
+/*
+     FILE ARCHIVED ON 20:06:05 Oct 26, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:47:56 Sep 07, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.734
+  exclusion.robots: 0.044
+  exclusion.robots.policy: 0.027
+  esindex: 0.011
+  cdx.remote: 68.032
+  LoadShardBlock: 558.375 (3)
+  PetaboxLoader3.datanode: 459.048 (5)
+  PetaboxLoader3.resolve: 269.562 (3)
+  load_resource: 201.29 (2)
+*/

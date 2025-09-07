@@ -1,0 +1,450 @@
+div#classBarNav {
+	width:980px;
+	font-size:12px;
+	}
+div#classBarNav ul.classBarNavLink {
+	list-style-type:none;
+	float:right;
+	padding:3px 0;
+	}
+div#classBarNav ul.classBarNavLink li {
+	float:left;
+	padding:0 8px;
+	}
+div#classBarNav ul.classBarNavLink li.lastMenuItem {
+	border-right:0;
+	}
+div#classBarNav ul.classBarNavMember {
+	list-style-type:none;
+	float:left;
+	padding:3px 5px;
+	}
+#memberLoginInfo a img{display:inline;vertical-align:top;}
+
+#memberLoginInfo {text-transform:uppercase;}
+div#classBarNav ul.classBarNavLink a {
+	text-transform:uppercase;
+	}
+div#headerPromo {
+	height:60px;
+	overflow:hidden;
+	padding-top:10px;
+	width:100%;
+	}
+div#headerPromo .holder {
+	padding-left:10px;
+	width:726px;
+	float:left;
+	}
+div#headerPromo div.headerItem,div#headerPromo div.headerAdExtra {
+	width:234px;
+	float:left;
+	padding-right:8px;
+	}
+div#headerPromo div.headerAdExtra {
+	height:60px;
+	}
+div#headerAd {
+	float:right;
+	padding-right:10px;
+	}
+div#headerthirdparty div#headerAd {
+	padding:0;
+	}
+div.headerAdCode {
+	position:absolute;
+	top:29px;
+	height:64px;
+	}
+div#headerAdCode1.headerAdCodeNoPromo {
+	top:55px;
+	}
+div#headerAdCode1 {
+	right:10px;
+	z-index: 2137483600;
+	}
+div#headerAdCode2 {
+	left:10px;
+	}
+div#headerAdCode3 {
+	left:252px;
+	}
+div#headerAdCode4 {
+	left:494px;
+	}
+#inlineHeaderAd {
+	z-index: 2147483600;
+	}
+div#navigation {
+	width:100%;
+	position:relative;
+	margin-top:8px;
+	margin-bottom:35px;
+	}
+div#navigation div#layerOne {
+	display:block;
+	position:relative;
+	}
+
+div#hotTopic div#search, div#hotTopic div#dsnssearch {
+	float:right;
+	padding:4px;
+	position:absolute;
+	top:-4px;
+	right:0;
+	font-weight: normal;
+	}
+div#hotTopic div#search input, div#hotTopic div#dsnssearch input {
+	font-size:10px;
+	}
+div#hotTopic div#search input#searchText, div#hotTopic div#dsnssearch input#searchText {
+	color:#666;
+	width:100px;
+	padding:2px 4px;
+	}
+		
+ul#root {
+	position:relative;
+	width:100%;
+	margin:0;
+	padding:0;
+	}
+ul#root li {
+	cursor:pointer;
+	float:left;
+	width:auto;
+	text-align:center;
+	list-style-type:none;
+	font-weight:700;
+	display:block;
+	padding:5px 7px;
+	}
+ul#root li a {
+	display:block;
+	float:left;
+	}
+ul#root li a.mainNav {
+	display:block;
+	text-transform:uppercase;
+	font-weight:400;
+	}
+ul#root li.highlight,ul#root li:hover {
+	background-image:url('/web/20121026200604im_/http://www.wgntv.com/common/images/menuArrow.jpg');
+	background-repeat:no-repeat;
+	background-position:top center;
+	}
+ul#root li.highlight a {
+	cursor:pointer;
+	}
+ul#root li ul.level2 {
+	cursor:pointer;
+	max-width:100%;
+	position:absolute;
+	height:auto;
+	left:-9999px;
+	top:26px;
+	width:980px;
+	display:block;
+	margin-top:0;
+	}
+ul#root li ul.level2 li {
+	max-width:none;
+	background-image:none;
+	padding:0 7px;
+	}
+ul#root li ul.level2 li a {
+	position:relative;
+	cursor:pointer;
+	white-space:nowrap;
+	font-weight: normal;
+	background-image:none;
+	text-transform:uppercase;
+	}
+ul#root li ul.level2 li a:hover {
+	text-decoration:underline;
+	}
+ul#root li ul.level2 li,ul#root li ul.level2 li.highlight li:hover {
+	background-image:none;
+	}
+ul#root li.hideMainNav a {
+	display:none;
+	}
+ul#root li.hideMainNav {
+	background-image:none;
+	padding:5px 0;
+	}
+ul#root li:hover ul,ul#root li.msieFix ul,ul#root li.highlight ul {
+	display:block;
+	left:0;
+	z-index:5;
+	}
+ul#root li ul.subStay {
+	z-index:3;
+	}
+ul#root li ul.subStay a {
+	display:block;
+	}
+div#hotTopic {
+	background-repeat:repeat-x;
+	width:980px;
+	padding-top:3px;
+	text-transform:uppercase;
+	font-size:14px;
+	font-weight:700;
+	position: relative;
+	min-height: 22px;
+	}
+div#hotTopic ul {
+	height:19px;
+	}
+div#hotTopic ul li {
+	float:left;
+	list-style-type:none;
+	border-left:1px solid #034;
+	padding:0 7px;
+	}
+div#hotTopic ul li a {
+	color:#034;
+	float:left;
+	font-size:12px;
+	font-weight:400;
+	text-transform:capitalize;
+	}
+div#hotTopic ul li.hot-link-begin {
+	border:none;
+	}
+div#logo {
+	float:left;
+	}
+div#logothirdparty {
+	float:left;
+	bottom:0;
+	left:10px;
+	position:absolute;
+	}
+div#headerthirdparty {
+	background-color:#FFF;
+	height:90px;
+	width:980px;
+	position:relative;
+	margin:5px 0;
+	}
+div#toolbarthirdparty {
+	background-color:#26b;
+	margin-top:0;
+	position:relative;
+	width:100%;
+	}
+div#breadcrumbthirdparty {
+	float:left;
+	font-size:11px;
+	position:absolute;
+	left:3px;
+	top:4px;
+	}
+div#headerPromo div.holder div.wrapper,div#searchthirdparty {
+	float:right;
+	}
+div#navigation a,div#hotTopic a {
+	text-decoration:none;
+	}
+div.goto-iphone-version {
+	text-align: center;
+	line-height: 50px;
+	height: 50px;
+	border: 3px solid #F00;
+	font-size: 30px;
+}
+div.ltvLeader {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+    height: 90px;
+    width: 728px;
+}
+
+div#targetWeeklyAd {
+	background: #cc0000;
+	float: right;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+div#targetWeeklyAd:hover {
+	cursor: pointer;
+}
+
+div#targetWeeklyAd a {
+	color: #fff;
+}
+
+div#targetWeeklyAd a:visited {
+	color: #fff;
+}
+
+div#targetWeeklyAd a:hover {
+	color: #fff;
+}
+
+div#targetWeeklyAdLogo {
+	float: left;
+}
+
+div#targetWeeklyAdText {
+	float: left;
+	color: #fff;
+	font-weight: 700;
+	margin-left: 8px;
+}
+
+/* Advertiser Self Service Navigation Styles ADSS */
+#adss-nav {
+	margin: 0px;
+}
+#adss-nav li {
+	padding: 0 0 8px;
+	float: left;
+	position: relative;
+	list-style: none;
+}
+#adss-nav li.adss-sub-nav a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 1px 14px;
+	margin-top: 0px;
+}
+#adss-nav li.adss-sub-nav a:hover {/*font-weight:bold;*/}
+#adss-nav li.adss-align-right {
+	float: right;
+}
+#adss-nav a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 10.5px 14px;
+	margin-top: 0px;
+}
+#adss-nav .current a, #adss-nav li:hover > a {
+	background: #EEE; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEE', endColorstr='#CCC'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#CCC)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #EEE,  #CCC); /* for firefox 3.6+ */
+	color: #000000;
+	-webkit-border-top-left-radius: 9px;
+	-moz-border-radius-topleft: 9px;
+	-webkit-border-top-right-radius: 9px;
+	-moz-border-radius-topright: 9px;
+}
+#adss-nav ul li:hover a, #adss-nav li:hover li a {
+	background: none;
+	border: none;
+	color: #000000;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+#adss-nav ul a:hover {
+	background: #EEE; /* for non-css3 browsers */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EEE', endColorstr='#CCC'); /* for IE */
+	background: -webkit-gradient(linear, left top, left bottom, from(#EEE), to(#CCC)) !important; /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #EEE,  #CCC) !important; /* for firefox 3.6+ */
+	color: #000000;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	text-decoration: underline;
+}
+#adss-nav ul {
+	background: #EEE; /* for non-css3 browsers */
+	background: -webkit-gradient(linear, left top, left bottom, from(#CCC), to(#EEE)); /* for webkit browsers */
+	background: -moz-linear-gradient(top,  #CCC,  #EEE); /* for firefox 3.6+ */
+	display: none;
+	z-index: 999999999999999999999999999;
+	margin-top: 0px;
+	padding: -10px;
+	position: absolute;
+	top: 38px;
+	left: 0;
+	width: 100%;
+	border-left: solid 1px #ccc;
+	border-right: solid 1px #ccc;
+	border-bottom: solid 1px #ccc;
+	-webkit-border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+}
+#adss-nav li:hover > ul {
+	display: block;
+	width: 99%;
+}
+#adss-nav ul li {
+	float: none;
+	z-index: 999999999999999999999999999;
+	margin: 0;
+	padding: 0;
+}
+#adss-nav ul a {
+	font-weight: normal;
+}
+#adss-nav ul li:first-child > a {
+	-webkit-border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+}
+#adss-nav ul li:last-child > a {
+	-webkit-border-bottom-left-radius: 9px;
+	-moz-border-radius-bottomleft: 9px;
+	-webkit-border-bottom-right-radius: 9px;
+	-moz-border-radius-bottomright: 9px;
+	padding-bottom: 8px;
+}
+#adss-nav:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+html[xmlns] #adss-nav {
+	display: block;
+}
+* html #adss-nav {
+	height: 1%;
+}
+div#classBarNav.advertiser {width:980px;}
+div#classBarNav.advertiser ul.classBarNavLink li span {float:left;}
+div#classBarNav.advertiser ul.classBarNavLink li.lastMenuItem {float:right;}
+div#classBarNav.advertiser ul.classBarNavLink {float:none;}
+
+/* End Advertiser Self Service Navigation Styles ADSS */
+/*
+     FILE ARCHIVED ON 20:06:04 Oct 26, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:47:53 Sep 07, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.671
+  exclusion.robots: 0.032
+  exclusion.robots.policy: 0.019
+  esindex: 0.016
+  cdx.remote: 54.063
+  LoadShardBlock: 146.302 (3)
+  PetaboxLoader3.datanode: 167.178 (5)
+  PetaboxLoader3.resolve: 365.781 (3)
+  load_resource: 414.715 (2)
+*/
